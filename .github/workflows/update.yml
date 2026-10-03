@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "pompa-giusta-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/history.json data/anomalie.json
+          git add data/history.json data/anomalie.json data/diagnostica.json
           git diff --cached --quiet || (git commit -m "Aggiorna storico delle medie" && for i in 1 2 3 4 5; do git pull --rebase origin main && git push && break; sleep 5; done)
 
       - name: Prepara il sito

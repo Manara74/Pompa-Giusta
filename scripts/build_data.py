@@ -407,6 +407,18 @@ def main():
                    'righe': [{'motivo': m, 'riga': r} for m, r in anomalies[:80]]},
                   f, ensure_ascii=False, indent=1)
 
+    # diagnostica: distribuzione dei prezzi, per controllare che non ci siano valori strani
+    diag = {'date': date, 'keys': {}}
+    for k in sorted({k for s in stations for k in s['x']}):
+        vals = sorted((v, s['i'], s['n'], s['c'], s['p'], bool(s.get('h'))) for s in stations for kk, v in s['x'].items() if kk == k)
+        only = [v[0] for v in vals]
+        n = len(only)
+        diag['keys'][k] = {'n': n, 'min': only[0], 'p5': only[n // 20], 'med': only[n // 2], 'p95': only[n - 1 - n // 20], 'max': only[-1],
+                           'sotto_1.7': sum(1 for v in only if v < 1.7), 'sopra_2.4': sum(1 for v in only if v > 2.4),
+                           'piu_bassi': vals[:6], 'piu_alti': vals[-4:]}
+    with open(os.path.join(args.out, 'diagnostica.json'), 'w', encoding='utf-8') as f:
+        json.dump(diag, f, ensure_ascii=False, indent=1)
+
     print('Fatto: %d impianti, prezzi del %s, %d prezzi scartati perche\' vecchi, %d con servizi.' %
           (len(stations), date, stale, matched))
 
