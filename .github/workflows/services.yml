@@ -2,7 +2,8 @@ name: Aggiorna i servizi dei distributori
 
 on:
   schedule:
-    - cron: '30 3 * * 0'   # ogni domenica notte
+    - cron: '30 3 * * 0'   # ogni domenica notte: aggiorna tutto
+    - cron: '40 */4 * * *' # ogni 4 ore: riprova solo le regioni ancora mancanti
   workflow_dispatch:
     inputs:
       regioni:
@@ -25,7 +26,7 @@ jobs:
 
       - name: Raccogli i servizi da OpenStreetMap
         env:
-          SOLO: ${{ github.event_name == 'workflow_dispatch' && inputs.regioni != 'tutte' && inputs.regioni || '' }}
+          SOLO: ${{ (github.event_name == 'workflow_dispatch' && inputs.regioni != 'tutte' && inputs.regioni) || (github.event_name == 'schedule' && github.event.schedule != '30 3 * * 0' && 'mancanti') || '' }}
         run: python scripts/build_services.py --solo "$SOLO"
 
       - name: Salva i servizi
