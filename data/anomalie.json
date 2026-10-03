@@ -1,0 +1,326 @@
+{
+ "date": "2026-10-02",
+ "totale": 113,
+ "righe": [
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "40820|STOIL SIMPLE|Pompe Bianche|Stradale|STOIL SIMPLE | gestori.prezzibenzina.it|STR. PROV.LE 82 SPINETTA SALE  15122|ALESSANDRIA|AL|44.91704718250436|8.70067298412323"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "23316|SANTORO PETROLI S.R.L.|Pompe Bianche|Stradale|SANTORO PETROLI - FIUMARA | gestori.prezzibenzina.it|CONTRADA FIUMARA 11 83040|CARIFE|AV|41.01864196825124|15.180299207568169"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "56803|SANTORO PETROLI S.R.L.|Pompe Bianche|Stradale|SANTORO PETROLI - GROTTAMINARDA | gestori.prezzibenzina.it|SS 90 VARIANTE KM 866 SNC 83035|GROTTAMINARDA|AV|41.064255847097606|15.08650149968337"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "48333|SANTORO PETROLI S.R.L.|Pompe Bianche|Stradale|SANTORO PETROLI - GUARDIA | gestori.prezzibenzina.it|VIA BORGO (EXS.S.303KM.21+354) SNC 83040|GUARDIA LOMBARDI|AV|40.958367990767314|15.209122840614317"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "23317|SANTORO PETROLI S.R.L.|Pompe Bianche|Stradale|SANTORO PETROLI - LIONI | gestori.prezzibenzina.it| SS. 400 KM 33+053  SNC 83047|LIONI|AV|40.89819441170126|15.162087678909302"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "35553|PETROLJ - SOCIETA' A RESPONSABILITA' LIMITATA|Esso|Stradale|PV1 ESSO FABOZZI | gestori.prezzibenzina.it|VIA ROMA 275 81038|TRENTOLA-DUCENTA|CE|40.97784114336101|14.189696538206462"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "33029|PETROLJ - SOCIETA' A RESPONSABILITA' LIMITATA|Esso|Stradale|PV2 ESSO FABOZZI | gestori.prezzibenzina.it|VIA N.S. ANTONIO 62 81038|TRENTOLA-DUCENTA|CE|40.978692518259464|14.19046683989258"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "33028|PETROLJ - SOCIETA' A RESPONSABILITA' LIMITATA|Esso|Stradale|PV3 ESSO FABOZZI METANO GPL | gestori.prezzibenzina.it| ST. PROV. TRENTOLA-ISCHITELLA KM. 1,5 81038|TRENTOLA-DUCENTA|CE|40.97343811234559|14.14590613575433"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "37846|VENTURA LUIGI GABRIELE|Pompe Bianche|Stradale|VENTURA CARBURANTI | gestori.prezzibenzina.it|Statale 115 dir Sud Occidentale Sicula, Km. 251-090, dir. agrigento - 93012|GELA|CL|37.12027223554337|14.13180224597454"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "13922|LOIACONO & CO. S.R.L.|Pompe Bianche|Stradale|A1 CARBURANTI - CASTROVILLARI | gestori.prezzibenzina.it|VIALE CAMILLO GOLGI SNC  87012|CASTROVILLARI|CS|39.8272167592723|16.21960759162903"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "30740|C.F. AUTOGRILL S.R.L.|Q8|Stradale|Q8-ZGAS CORIGLIANO | gestori.prezzibenzina.it|Statale 106 Jonica, Km. 361+765, dir. NORD - 87064|CORIGLIANO CALABRO|CS|39.69139832428801|16.45321535379559"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "40626|ENERGICA - AMATO|Pompe Bianche|Stradale|ENERGICA - AMATO | gestori.prezzibenzina.it|Via F. Cappellano 2 88040|AMATO|CZ|38.939448009774125|16.4613825827837"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "41470|ENERGICA - FALLUC|Pompe Bianche|Stradale|ENERGICA - FALLUC | gestori.prezzibenzina.it|Via Conti Falluc 62/A 88100|CATANZARO|CZ|38.878171379430064|16.60056173801422"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "35311|ENERGICA - GAGLIANO|Pompe Bianche|Stradale|ENERGICA - GAGLIANO | gestori.prezzibenzina.it|Viale Tommaso Campanella  88100|CATANZARO|CZ|38.9135316|16.5703306"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "50981|ENERGICA - STADIO|Pompe Bianche|Stradale|ENERGICA - STADIO | gestori.prezzibenzina.it|Piazza Martiri Ungheresi  88100|CATANZARO|CZ|38.919035564949354|16.586290481282454"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "57612|ESSO - EMILIA|Esso|Stradale|ESSO - EMILIA | gestori.prezzibenzina.it|Viale Emilia 90/B 88100|CATANZARO|CZ|38.86500543355504|16.624846877893727"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "48714|ENERGICA - GIMIGLIANO|Pompe Bianche|Stradale|ENERGICA - GIMIGLIANO | gestori.prezzibenzina.it|Via IV Novembre 88 88045|GIMIGLIANO|CZ|38.97379747650543|16.53405131284086"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "36274|ENERGICA - MAGISANO|Pompe Bianche|Stradale|ENERGICA - MAGISANO | gestori.prezzibenzina.it|Via Valluzza  88050|MAGISANO|CZ|39.01175258445789|16.629978048324116"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "50982|ENERGICA - MARCELLINARA|Pompe Bianche|Stradale|ENERGICA - MARCELLINARA | gestori.prezzibenzina.it|SP 168/1  88044|MARCELLINARA|CZ|38.9219834100778|16.479359442927585"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "48971|ESSO - SIMERI CRICHI|Esso|Stradale|ESSO - SIMERI CRICHI | gestori.prezzibenzina.it|STATALE 106 KM 192+7 88050|SIMERI CRICHI|CZ|38.86602293132195|16.685563018750294"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "59004|ENERGICA - TIRIOLO|Pompe Bianche|Stradale|ENERGICA - TIRIOLO | gestori.prezzibenzina.it|Piazza 4 Novembre  88056|TIRIOLO|CZ|38.95016035825416|16.51204079389572"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "34895|RUBINO PETROLI S.R.L.|Pompe Bianche|Stradale|RUBINO PETROLI AP | gestori.prezzibenzina.it|VIA ITALIA 100 71011|APRICENA|FG|41.78029514967377|15.439175134393292"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "36033|RUBINO PETROLI S.R.L.|Pompe Bianche|Stradale|RUBINO PETROLI SP | gestori.prezzibenzina.it|Via Paolo Borsellino  71010|SAN PAOLO DI CIVITATE|FG|41.73232250661167|15.259980261325836"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "42417|RUBINO PETROLI S.R.L.|Pompe Bianche|Stradale|RUBINO PETROLI TO | gestori.prezzibenzina.it|Via Don Tommaso Leccisotti  71017|TORREMAGGIORE|FG|41.6878384411133|15.300999283790588"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "46816|Bernardini - Grosseto|Aquila|Stradale|BERNARDINI - GROSSETO | gestori.prezzibenzina.it|223 KM 2 + 509 SNC 58100|GROSSETO|GR|42.828633213166974|11.138425469398499"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "51067|Grifo Carburanti|Pompe Bianche|Stradale|GRIFO CARBURANTI | gestori.prezzibenzina.it|VIALE CARAVAGGIO 65 58100|GROSSETO|GR|42.74916869923278|11.11189277041856"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "44591|GARAGE ROBERTO SRL|Garage Roberto|Stradale|GARAGE ROBERTO - LECCO | gestori.prezzibenzina.it|A. MORO E CADUTI DI VIA FAN 13 23900|LECCO|LC|45.864795292244224|9.389112889766693"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "63596|RAOIL S.R.L.|Pompe Bianche|Stradale|RAOIL - ANDRANO | gestori.prezzibenzina.it|Via Provinciale 314  73032|ANDRANO|LE|39.979114293152016|18.375330041000364"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "63608|RAOIL S.R.L.|Pompe Bianche|Stradale|RAOIL - COPERTINO | gestori.prezzibenzina.it|STRADA PROVINCIALE 18 SNC 73043|COPERTINO|LE|40.24308358165508|18.08149045439756"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "58471|SMAF SERVICES S.R.L.|Smaf|Stradale|SMAF 1068 - MARCIANA | gestori.prezzibenzina.it|Via delle Ginestre 24 57030|MARCIANA|LI|42.785514179603716|10.245681281089793"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "58467|SMAF SERVICES S.R.L.|Smaf|Stradale|SMAF 1064 - PORTOFERRAIO | gestori.prezzibenzina.it|Via Colonnello Marco Antonio Carpani 42 57037|PORTOFERRAIO|LI|42.804870328905515|10.308340883605966"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "48837|MY CAR DI MATTIA MALABARBA|Esso|Stradale|ESSO - CODOGNO | gestori.prezzibenzina.it|VIALE MARCONI 20 26845|CODOGNO|LO|45.16101715410142|9.711855226491455"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "24344|START SERVICE S.A.S. DI MATTIA MALABARBA & C.|Pompe Bianche|Stradale|START SERVICE - FOMBIO | gestori.prezzibenzina.it|VIA BOCCASERIO 1 26861|FOMBIO|LO|45.14897884834186|9.697519249026513"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "62631|IPEROIL S.R.L.|Pompe Bianche|Stradale|IPEROIL CISTERNA DI LATINA | gestori.prezzibenzina.it|VIA APPIA KM 54 + 403 (TRAV. INTERNA) 6, 28 6,28 04012|CISTERNA DI LATINA|LT|41.57769796154228|12.838959659821564"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "57607|SMAF SERVICES S.R.L.|Smaf|Stradale|SMAF 1050 - LATINA 24 MAGGIO | gestori.prezzibenzina.it|Via XXIV Maggio  04100|LATINA|LT|41.46955224140285|12.908825607934569"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "57617|SMAF SERVICES S.R.L.|Smaf|Stradale|SMAF 1057 - LATINA S.AGOSTINO | gestori.prezzibenzina.it|Via Sant'Agostino 9 04100|LATINA|LT|41.458877129274|12.896741465081805"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "61802|SMAF SERVICES S.R.L.|Smaf|Stradale|SMAF 1074 - BORGO SAN MICHELE | gestori.prezzibenzina.it|SS148 km 79.500  04100|LATINA|LT|41.426767928882654|12.979141375732416"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "53900|SMAF SERVICES S.R.L.|Smaf|Stradale|SMAF 1030 - SABAUDIA KM 85+900 | gestori.prezzibenzina.it|Via Pontina 85+900 04016|SABAUDIA|LT|41.379092530944746|13.024671587280258"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "55033|SMAF SERVICES S.R.L.|Smaf|Stradale|SMAF 1041 - SABAUDIA KM 88+340 | gestori.prezzibenzina.it|Via Pontina 88+340 04016|SABAUDIA|LT|41.3656549567333|13.057706354553215"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "19351|STAZIONE DI SERVIZIO IP S.C.L.A.SRL|Api-Ip|Stradale|IP S.C.L.A. SRL - PIETRASANTA | gestori.prezzibenzina.it|VIALE ROMA 20 55045|PIETRASANTA|LU|43.931899162249294|10.195711189163163"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "12515|PRADELLI - VIGNOLA|Pompe Bianche|Stradale|PRADELLI - VIGNOLA | gestori.prezzibenzina.it|Via per Sassuolo 583 41058|VIGNOLA|MO|44.48613501756215|11.004510396356206"
+  },
+  {
+   "motivo": "colonne 12 invece di 10",
+   "riga": "54386|PRADELLI - MONTEOMBRARO | gestori.prezzibenzina.it|Pompe Bianche|Stradale|PRADELLI - MONTEOMBRARO | gestori.prezzibenzina.it|Via dei Martiri 255 41059|ZOCCA|MO|44.37912317059676|11.004677838023897"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "63440|CASCONE CARBURANTI DI CASCONE CLORINDA S.A.S.|Pompe Bianche|Stradale|ATALA OIL - CASTELLAMMARE DI STABIA | gestori.prezzibenzina.it|Corso Alcide de Gasperi 62 80053|CASTELLAMMARE DI STABIA|NA|40.70206100238295|14.483965595245358"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "9595|CASCONE - CASTELLAMMARE DI STABIA|Pompe Bianche|Stradale|CASCONE - CASTELLAMMARE DI STABIA | gestori.prezzibenzina.it|S.da Ponte della Persica 100 |CASTELLAMMARE DI STABIA|NA|40.7286529|14.4870058"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "58959|CASCONE C. SRL|Pompe Bianche|Stradale|GHEPARDOIL - NAPOLI | gestori.prezzibenzina.it|Via Amerigo Vespucci 79  80142|NAPOLI|NA|40.84569361342253|14.2732214576721"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "15723|Oil Parthenope|Pompe Bianche|Stradale|OIL PARTHENOPE | gestori.prezzibenzina.it|Via Reggia di Portici 87 80146|NAPOLI|NA|40.843673498192594|14.288698732852936"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "33025|PETROLJ - SOCIETA' A RESPONSABILITA' LIMITATA|Esso|Stradale|PV4 ESSO 6519 | gestori.prezzibenzina.it|via Oreste Salomone 38 80144|NAPOLI|NA|40.872224081960184|14.285371248023901"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "33027|PETROLJ - SOCIETA' A RESPONSABILITA' LIMITATA|Esso|Stradale|PV5 ESSO 6629 | gestori.prezzibenzina.it|via Galileo Ferraris 128 80146|NAPOLI|NA|40.84816764841679|14.290038393145794"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "57526|CASCONE C. SRL|Pompe Bianche|Stradale|COIL - POMPEI | gestori.prezzibenzina.it|Giuseppe Mazzini 48 80045|POMPEI|NA|40.74571581132676|14.502712852104187"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "62399|LORO - SAN PIETRO VIMINARIO|Loro|Stradale|LORO - SAN PIETRO VIMINARIO | gestori.prezzibenzina.it|Via Semitecola 27/A  35020|SAN PIETRO VIMINARIO|PD|45.245834173383635|11.812938698919679"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "51910|S.E. S.A.S. DI DE LUCIA SERENA & C.|Costantin|Stradale|COSTANTIN - VILLANOVA | gestori.prezzibenzina.it|Via Caltana 208 35010|VILLANOVA DI CAMPOSAMPIERO|PD|45.48777092584558|11.977195143699646"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "52051|REFUEL SRL|Pompe Bianche|Stradale|MARTINA REFUEL - SAN MARTINO BASSA | gestori.prezzibenzina.it|Strada Lungofino 6 65013|CITTÀ SANT'ANGELO|PE|42.51864038295636|14.134222049316174"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "52046|REFUEL SRL|Pompe Bianche|Stradale|MARTINA REFUEL - COLLECORVINO | gestori.prezzibenzina.it|Viale Italia 131 65010|COLLECORVINO|PE|42.44442990960114|14.048592650788477"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "52042|REFUEL SRL|Pompe Bianche|Stradale|MARTINA REFUEL - MONTESILVANO VIA CAVALLOTTI | gestori.prezzibenzina.it|Via Felice Cavallotti 12 65015|MONTESILVANO|PE|42.51452905822219|14.14197716471931"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "52045|REFUEL SRL|Pompe Bianche|Stradale|MARTINA REFUEL - MONTESILVANO VIA VERROTTI | gestori.prezzibenzina.it|Via Verrotti  65015|MONTESILVANO|PE|42.494978843183056|14.17290153208902"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "52043|REFUEL SRL|Pompe Bianche|Stradale|MARTINA REFUEL - MONTESILVANO VIA VESTINA | gestori.prezzibenzina.it|Via Vestina 408 65015|MONTESILVANO|PE|42.501276490346356|14.133134149707084"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "52050|REFUEL SRL|Pompe Bianche|Stradale|MARTINA REFUEL - MOSCUFO | gestori.prezzibenzina.it|Via Cristoforo Colombo  65010|MOSCUFO|PE|42.4518732619711|14.069379881455728"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "52044|REFUEL SRL|Pompe Bianche|Stradale|MARTINA REFUEL - PESCARA PIAZZA DUCA | gestori.prezzibenzina.it|Piazza Duca degli Abruzzi 74 65124|PESCARA|PE|42.48090253770293|14.193574732651948"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "52047|REFUEL SRL|Pompe Bianche|Stradale|MARTINA REFUEL - PESCARA STRADA CAVONE | gestori.prezzibenzina.it|Strada Fosso Cavone  65129|PESCARA|PE|42.44070105244694|14.19740590350823"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "52048|REFUEL SRL|Pompe Bianche|Stradale|MARTINA REFUEL - PESCARA VIA FONTE | gestori.prezzibenzina.it|Via Fonte Romana 101 65124|PESCARA|PE|42.46365458352955|14.186889626290634"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "52049|REFUEL SRL|Pompe Bianche|Stradale|Martina REfuel - Spoltore | gestori.prezzibenzina.it|Via Fonte Vecchia  65010|SPOLTORE|PE|42.46251603913594|14.173654078115778"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "60707|IPEROIL S.R.L.|Pompe Bianche|Stradale|IPEROIL - CITTÀ DI CASTELLO | gestori.prezzibenzina.it|Via Donino Donini 7/c 06012|CITTÀ DI CASTELLO|PG|43.385303|12.253503"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "60555|IPEROIL S.R.L.|Pompe Bianche|Stradale|IPEROIL - FARA IN SABINA | gestori.prezzibenzina.it|VIA FARENSE, SP 41 KM 1.867 88 02032|FARA IN SABINA|RI|42.1718958|12.6662015"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "60499|IPEROIL S.R.L.|Pompe Bianche|Stradale|IPEROIL - PONTINA | gestori.prezzibenzina.it|ss n.148 km 37+070.snc.00040 Ardea RM snc 00040|ARDEA|RM|41.633139043305974|12.567882432066332"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "62334|IPEROIL S.R.L.|Pompe Bianche|Stradale|IPEROIL - COLONNA GPL | gestori.prezzibenzina.it|S.S. CASILINA KM26,805 SNC SNC 00030|COLONNA|RM|41.83401117212291|12.770514987441656"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "58019|SMAF SERVICES S.R.L.|Smaf|Stradale|SMAF 1052 - FRASCATI | gestori.prezzibenzina.it|Piazza Guglielmo Marconi SNC 00044|FRASCATI|RM|41.80495464421931|12.679457605267643"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "50254|LSN 05 S.R.L.|Q8|Stradale|Q8 5535 - MORICONE | gestori.prezzibenzina.it|ROMA 1 00010|MORICONE|RM|42.11603391266575|12.773056924343104"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "60436|IPEROIL S.R.L.|Pompe Bianche|Stradale|SMAF - NETTUNO | gestori.prezzibenzina.it|VIA NETTUNENSE KM28+913 SS 207 SNC 00048|NETTUNO|RM|41.52699486906423|12.633994491085744"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "50252|LSN 05 S.R.L.|Q8|Stradale|Q8 5534 - PALOMBARA SABINA | gestori.prezzibenzina.it| S.P35D KM 1,670 DEL PASCOLARE 1 00018|PALOMBARA SABINA|RM|42.09977355762525|12.646598815917963"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "59288|SMAF SERVICES S.R.L.|Smaf|Stradale|SMAF 1072 - PALOMBARA SABINA | gestori.prezzibenzina.it|Via della Neve 185 |PALOMBARA SABINA|RM|42.09412772037689|12.67136482019461"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "60431|IPEROIL S.R.L.|Pompe Bianche|Stradale|IPEROIL - ARDEATINA | gestori.prezzibenzina.it|Via Ardeatina 781  00178|ROMA|RM|41.810165204880505|12.528740389618672"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "60294|IPEROIL S.R.L.|Pompe Bianche|Stradale|IPEROIL - CIPRO | gestori.prezzibenzina.it|Via Cipro 12 00136|ROMA|RM|41.907246|12.446597"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "60293|IPEROIL S.R.L.|Pompe Bianche|Stradale|IPEROIL - NOMENTANA | gestori.prezzibenzina.it|Via Nomentana 387  00141|ROMA|RM|41.92616222596661|12.522905151030347"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "60295|IPEROIL S.R.L.|Pompe Bianche|Stradale|IPEROIL - PORTUENSE | gestori.prezzibenzina.it|Via Portuense 851  00148|ROMA|RM|41.84372154362458|12.410269178504171"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "62315|IPEROIL S.R.L.|Pompe Bianche|Stradale|IPEROIL - SANTA MARIA AUSILIATRICE | gestori.prezzibenzina.it|S. MARIA AUSILIATRICE 55 00181|ROMA|RM|41.873745458364006|12.530739137835518"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "61029|IPEROIL S.R.L.|Pompe Bianche|Stradale|IPEROIL - T.SALVINI | gestori.prezzibenzina.it|Via Tommaso Salvini 2f  00197|ROMA|RM|41.92821|12.49330"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "60435|IPEROIL S.R.L.|Pompe Bianche|Stradale|SMAF - FOSSO DELL'OSA | gestori.prezzibenzina.it|Via del Fosso dell'Osa 410 00132|ROMA|RM|41.90473551124703|12.684395386542908"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "60434|IPEROIL S.R.L.|Pompe Bianche|Stradale|SMAF - PRENESTINA 1112 | gestori.prezzibenzina.it|Via Prenestina 1112  00132|ROMA|RM|41.89306722186922|12.616669956236283"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "62045|SMAF SERVICES S.R.L.|Smaf|Stradale|SMAF 1001 - TRIPOLI | gestori.prezzibenzina.it|Via Tripoli 88 00199|ROMA|RM|41.929180684802986|12.520131319761271"
+  },
+  {
+   "motivo": "colonne 11 invece di 10",
+   "riga": "47317|STATION 31700 S.R.L.|Smaf|Stradale|SMAF 1003 - ODESCALCHI | gestori.prezzibenzina.it|Via Carlo Tommaso Odescalchi 110 00147|ROMA|RM|41.85374534791794|12.498204857110977"
+  }
+ ]
+}
