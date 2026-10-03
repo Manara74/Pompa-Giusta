@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: '30 3 * * 0'   # ogni domenica notte
   workflow_dispatch:
+    inputs:
+      regioni:
+        description: "Regioni da aggiornare (separate da virgola), oppure 'mancanti', oppure 'tutte'"
+        default: 'mancanti'
 
 permissions:
   contents: write
@@ -20,7 +24,9 @@ jobs:
           python-version: '3.12'
 
       - name: Raccogli i servizi da OpenStreetMap
-        run: python scripts/build_services.py
+        env:
+          SOLO: ${{ github.event_name == 'workflow_dispatch' && inputs.regioni != 'tutte' && inputs.regioni || '' }}
+        run: python scripts/build_services.py --solo "$SOLO"
 
       - name: Salva i servizi
         run: |

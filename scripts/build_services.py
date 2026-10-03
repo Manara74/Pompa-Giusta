@@ -79,6 +79,39 @@ def overpass(query, tries=4):
     raise RuntimeError(last)
 
 
+def province_codes(region_name):
+    """Sigle delle province di una regione, lette da province.json."""
+    try:
+        rows = json.load(open(os.path.join(ROOT, 'province.json'), encoding='utf-8'))
+    except (OSError, ValueError):
+        return []
+    return [r[0] for r in rows if r[2] == region_name]
+
+
+def fetch_region(iso, name):
+    """Prova la regione intera; se il servizio non regge, la spezza provincia per provincia."""
+    try:
+        part = process(overpass(QUERY % iso).get('elements', []), name)
+        if part:
+            return part
+        raise RuntimeError('risposta vuota')
+    except Exception as e:
+        print('  regione intera non riuscita (%s): provo provincia per provincia' % e, file=sys.stderr)
+    out, ok = [], 0
+    for sigla in province_codes(name):
+        time.sleep(15)
+        try:
+            els = overpass(QUERY % ('IT-' + sigla)).get('elements', [])
+            out.extend(process(els, name))
+            ok += 1
+            print('  provincia %s: %d in totale' % (sigla, len(out)))
+        except Exception as e:
+            print('  provincia %s non riuscita: %s' % (sigla, e), file=sys.stderr)
+    if not ok or not out:
+        raise RuntimeError('nessuna provincia riuscita')
+    return out
+
+
 def coords(el):
     if 'lat' in el:
         return el['lat'], el['lon']
@@ -178,6 +211,7 @@ def process(elements, region):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--from-json', help='risposta Overpass salvata (prova locale)')
+    ap.add_argument('--solo', default='', help="regioni da aggiornare, separate da virgola, oppure 'mancanti'")
     ap.add_argument('--out', default=os.path.join(ROOT, 'data', 'services.json'))
     args = ap.parse_args()
 
@@ -192,14 +226,23 @@ def main():
         previous = json.load(open(args.out, encoding='utf-8'))
     except (OSError, ValueError):
         previous = []
+    ap_solo = args.solo
+    have = {e.get('g') for e in previous}
+    if ap_solo == 'mancanti':
+        todo = [n for n in REGIONS.values() if n not in have]
+    elif ap_solo:
+        todo = [n.strip() for n in ap_solo.split(',') if n.strip()]
+    else:
+        todo = list(REGIONS.values())
+    print('Regioni da aggiornare: %s' % (', '.join(todo) or 'nessuna'))
     fresh, failed = [], []
     for iso, name in REGIONS.items():
+        if name not in todo:
+            fresh.extend([e2 for e2 in previous if e2.get('g') == name])
+            continue
         print('Regione %s (%s)...' % (name, iso))
         try:
-            data = overpass(QUERY % iso)
-            part = process(data.get('elements', []), name)
-            if not part:
-                raise RuntimeError('risposta vuota')
+            part = fetch_region(iso, name)
             fresh.extend(part)
             print('  %d distributori con servizi' % len(part))
         except Exception as e:
