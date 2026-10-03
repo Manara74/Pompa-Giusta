@@ -163,11 +163,22 @@ function detailHTML(s, set) {
     '<div class="acts">' + nav + '<button type="button" class="btn small ghost" data-act="fav" data-id="' + esc(s.id) + '">' +
     (isFav(s.id) ? '★ Nei preferiti' : '☆ Aggiungi ai preferiti') + '</button></div></div>';
 }
+function emptyMsg(where, pool, hint) {
+  const base = 'Nessun distributore con ' + FUELS[S.f].toLowerCase() + ' (' + (S.m ? 'self' : 'servito') + ') ' + where;
+  if (!S.svf.length) return base + '. ' + hint;
+  const names = S.svf.map(c => FILTERS.find(f => f[0] === c)[1]).join(' + ');
+  const known = pool.some(s => s.s && s.s.length);
+  return base + ' che abbia: ' + names + '. ' + (known
+    ? 'Qui OpenStreetMap non ha segnato questo servizio, ma il distributore potrebbe averlo: togli il filtro per vederli tutti.'
+    : 'Per questa zona i dati sui servizi non sono ancora disponibili: togli il filtro per vedere tutti i distributori.');
+}
 function rowHTML(s, o) {
   const k = key(), p = s.p[k];
   const d = o.avg != null ? p - o.avg : null;
-  const cls = d == null ? 'warn' : d <= -0.0095 ? 'good' : d >= 0.0095 ? 'bad' : 'warn';
-  const lab = cls === 'good' ? 'Sotto la media' : cls === 'bad' ? 'Sopra la media' : 'In linea con la media';
+  const odd = d != null && (d <= -0.3 || d >= 0.5); // scarto fuori dal normale: puo' essere un errore del gestore
+  const cls = d == null || odd ? 'warn' : d <= -0.0095 ? 'good' : d >= 0.0095 ? 'bad' : 'warn';
+  const lab = odd ? (d < 0 ? 'Molto sotto la media: da verificare' : 'Molto sopra la media: da verificare')
+    : cls === 'good' ? 'Sotto la media' : cls === 'bad' ? 'Sopra la media' : 'In linea con la media';
   const set = effSv(s), open = S.open === s.id;
   const delta = d != null
     ? '<div class="delta ' + cls + '"><strong>' + PG.fmtC(d) + '</strong><span>' + lab + '</span><em>' +
@@ -266,7 +277,7 @@ function renderZona() {
   const shown = list.slice(0, S.limit);
   $('list').innerHTML = shown.length
     ? shown.map((s, i) => rowHTML(s, { rank: i + 1, total: list.length, avg: avgR })).join('')
-    : '<li class="empty">Nessun distributore con ' + FUELS[S.f].toLowerCase() + ' (' + (S.m ? 'self' : 'servito') + ') per questi filtri. Prova a cambiare modalità o a togliere un filtro.</li>';
+    : '<li class="empty">' + esc(emptyMsg('per questi filtri', S.stations.filter(s => s.prov === S.prov), 'Prova a cambiare modalità o a togliere un filtro.')) + '</li>';
   $('btnMore').hidden = list.length <= S.limit;
 
   const sel = S.open ? S.byId.get(S.open) : null;
@@ -287,7 +298,8 @@ function renderNear() {
   const items = PG.near(S.stations.filter(s => passSv(s) && passFav(s)), k, lat, lon, S.near.radius);
   items.forEach(it => { it.det = PG.detour(it.d); it.price = it.s.p[k]; it.cost = PG.cost(it.price, S.litri, S.consumo, it.det); });
   if (!items.length) {
-    box.innerHTML = '<li class="empty">Nessun distributore con ' + FUELS[S.f].toLowerCase() + ' (' + (S.m ? 'self' : 'servito') + ') entro ' + S.near.radius + ' km. Prova ad allargare il raggio o a togliere un filtro.</li>';
+    const pool = PG.near(S.stations.filter(passFav), k, lat, lon, S.near.radius).map(it => it.s);
+    box.innerHTML = '<li class="empty">' + esc(emptyMsg('entro ' + S.near.radius + ' km', pool, 'Prova ad allargare il raggio.')) + '</li>';
     sum.hidden = true; $('btnMoreNear').hidden = true; return;
   }
   sortItems(items, S.near.sort);
@@ -377,7 +389,7 @@ function renderRoute(fit) {
   const tripTxt = 'Percorso di <b>' + PG.fmtKm(R.total) + '</b>, circa ' + Math.round(R.dur / 60) + ' minuti. ';
   if (!items.length) {
     sum.hidden = false;
-    sum.innerHTML = tripTxt + 'Non trovo distributori con ' + FUELS[S.f].toLowerCase() + ' (' + (S.m ? 'self' : 'servito') + ') entro ' + S.route.detour + ' km dal percorso. Prova ad allargare la deviazione o a togliere un filtro.';
+    sum.innerHTML = tripTxt + esc(emptyMsg('entro ' + S.route.detour + ' km dal percorso', [], 'Prova ad allargare la deviazione.')).replace('Per questa zona i dati sui servizi non sono ancora disponibili: togli il filtro per vedere tutti i distributori.', 'Il servizio può non essere segnato su OpenStreetMap: togli il filtro per vederli tutti.');
     box.innerHTML = ''; $('btnMoreRoute').hidden = true; drawMap([], fit); return;
   }
   const avgP = items.reduce((t, it) => t + it.price, 0) / items.length;
