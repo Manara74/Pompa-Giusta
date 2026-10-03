@@ -1,0 +1,757 @@
+{
+ "date": "2026-10-02",
+ "keys": {
+  "B0": {
+   "n": 13651,
+   "min": 1.206,
+   "p5": 1.994,
+   "med": 2.2,
+   "p95": 2.409,
+   "max": 3.25,
+   "sotto_1.7": 15,
+   "sopra_2.4": 741,
+   "piu_bassi": [
+    [
+     1.206,
+     "9205",
+     "ENI TREPALLE",
+     "Livigno",
+     "SO",
+     false
+    ],
+    [
+     1.569,
+     "36845",
+     "Via Degli Angeli",
+     "Roma",
+     "RM",
+     false
+    ],
+    [
+     1.628,
+     "21866",
+     "TOTAL ERG - LIVIGNO",
+     "Livigno",
+     "SO",
+     false
+    ],
+    [
+     1.628,
+     "21869",
+     "TOTAL ERG - LIVIGNO",
+     "Livigno",
+     "SO",
+     false
+    ],
+    [
+     1.628,
+     "22670",
+     "CU.BA. SRL",
+     "Livigno",
+     "SO",
+     false
+    ],
+    [
+     1.629,
+     "51253",
+     "C-ENERGIA",
+     "Livigno",
+     "SO",
+     false
+    ]
+   ],
+   "piu_alti": [
+    [
+     2.824,
+     "21507",
+     "IP",
+     "Prato",
+     "PO",
+     false
+    ],
+    [
+     2.869,
+     "12654",
+     "Staz. Carburanti De Simone Domenico",
+     "Milano",
+     "MI",
+     false
+    ],
+    [
+     2.899,
+     "13214",
+     "Frasca Pompeo",
+     "Corigliano-Rossano",
+     "CS",
+     false
+    ],
+    [
+     3.25,
+     "60141",
+     "NAUTILUS AVIATION SPA LINOSA",
+     "Lampedusa E Linosa",
+     "AG",
+     false
+    ]
+   ]
+  },
+  "B1": {
+   "n": 20079,
+   "min": 1.206,
+   "p5": 1.989,
+   "med": 2.029,
+   "p95": 2.199,
+   "max": 2.869,
+   "sotto_1.7": 80,
+   "sopra_2.4": 38,
+   "piu_bassi": [
+    [
+     1.206,
+     "9205",
+     "ENI TREPALLE",
+     "Livigno",
+     "SO",
+     false
+    ],
+    [
+     1.558,
+     "60316",
+     "RIETI- SALARIA",
+     "Rieti",
+     "RI",
+     false
+    ],
+    [
+     1.564,
+     "60401",
+     "VITERBO - KM 62",
+     "Viterbo",
+     "VT",
+     false
+    ],
+    [
+     1.565,
+     "60399",
+     "VITERBO - TUSCANESE",
+     "Viterbo",
+     "VT",
+     false
+    ],
+    [
+     1.569,
+     "36845",
+     "Via Degli Angeli",
+     "Roma",
+     "RM",
+     false
+    ],
+    [
+     1.575,
+     "60391",
+     "BOMARZO",
+     "Bomarzo",
+     "VT",
+     false
+    ]
+   ],
+   "piu_alti": [
+    [
+     2.699,
+     "61729",
+     "POSTUMIA NORD",
+     "Bolzano Vicentino",
+     "VI",
+     true
+    ],
+    [
+     2.699,
+     "61730",
+     "POSTUMIA SUD",
+     "Bolzano Vicentino",
+     "VI",
+     true
+    ],
+    [
+     2.763,
+     "61340",
+     "Gestore MBL srl",
+     "Capraia Isola",
+     "LI",
+     false
+    ],
+    [
+     2.869,
+     "12654",
+     "Staz. Carburanti De Simone Domenico",
+     "Milano",
+     "MI",
+     false
+    ]
+   ]
+  },
+  "D0": {
+   "n": 13632,
+   "min": 1.342,
+   "p5": 2.19,
+   "med": 2.4,
+   "p95": 2.629,
+   "max": 3.659,
+   "sotto_1.7": 8,
+   "sopra_2.4": 5939,
+   "piu_bassi": [
+    [
+     1.342,
+     "9205",
+     "ENI TREPALLE",
+     "Livigno",
+     "SO",
+     false
+    ],
+    [
+     1.599,
+     "54868",
+     "STAR OIL",
+     "Roma",
+     "RM",
+     false
+    ],
+    [
+     1.639,
+     "58876",
+     "MONTEPORZIO",
+     "Monte Porzio Catone",
+     "RM",
+     false
+    ],
+    [
+     1.659,
+     "33454",
+     "ZENO CIRO",
+     "Torre Del Greco",
+     "NA",
+     false
+    ],
+    [
+     1.659,
+     "59590",
+     "GPS GREGORIO VII",
+     "Roma",
+     "RM",
+     false
+    ],
+    [
+     1.689,
+     "10464",
+     "ANGELI SABRINA",
+     "Cagli",
+     "PU",
+     false
+    ]
+   ],
+   "piu_alti": [
+    [
+     3.163,
+     "22620",
+     "IP VERZUOLO",
+     "Verzuolo",
+     "CN",
+     false
+    ],
+    [
+     3.163,
+     "24518",
+     "IP VILLANOVA MONDOVI'",
+     "Villanova Mondovì",
+     "CN",
+     false
+    ],
+    [
+     3.163,
+     "37545",
+     "IP FOSSANO - SAN LORENZO",
+     "Fossano",
+     "CN",
+     false
+    ],
+    [
+     3.659,
+     "40536",
+     "TAMOIL",
+     "Valbrembo",
+     "BG",
+     false
+    ]
+   ]
+  },
+  "D1": {
+   "n": 20084,
+   "min": 1.342,
+   "p5": 2.189,
+   "med": 2.22,
+   "p95": 2.414,
+   "max": 2.899,
+   "sotto_1.7": 72,
+   "sopra_2.4": 1210,
+   "piu_bassi": [
+    [
+     1.342,
+     "9205",
+     "ENI TREPALLE",
+     "Livigno",
+     "SO",
+     false
+    ],
+    [
+     1.544,
+     "60909",
+     "VICALVI",
+     "Vicalvi",
+     "FR",
+     false
+    ],
+    [
+     1.549,
+     "60751",
+     "PERGOLA",
+     "Pergola",
+     "PU",
+     false
+    ],
+    [
+     1.552,
+     "60954",
+     "PORTO VIRO",
+     "Porto Viro",
+     "RO",
+     false
+    ],
+    [
+     1.559,
+     "60896",
+     "GUALDO",
+     "Gualdo",
+     "MC",
+     false
+    ],
+    [
+     1.564,
+     "59873",
+     "AILANO",
+     "Ailano",
+     "CE",
+     false
+    ]
+   ],
+   "piu_alti": [
+    [
+     2.893,
+     "12348",
+     "galli agnese",
+     "Milano",
+     "MI",
+     false
+    ],
+    [
+     2.899,
+     "12654",
+     "Staz. Carburanti De Simone Domenico",
+     "Milano",
+     "MI",
+     false
+    ],
+    [
+     2.899,
+     "61729",
+     "POSTUMIA NORD",
+     "Bolzano Vicentino",
+     "VI",
+     true
+    ],
+    [
+     2.899,
+     "61730",
+     "POSTUMIA SUD",
+     "Bolzano Vicentino",
+     "VI",
+     true
+    ]
+   ]
+  },
+  "G0": {
+   "n": 4464,
+   "min": 0.554,
+   "p5": 0.679,
+   "med": 0.749,
+   "p95": 0.898,
+   "max": 1.399,
+   "sotto_1.7": 4464,
+   "sopra_2.4": 0,
+   "piu_bassi": [
+    [
+     0.554,
+     "60189",
+     "LAVELLO",
+     "Lavello",
+     "PZ",
+     false
+    ],
+    [
+     0.554,
+     "60244",
+     "VENOSA",
+     "Venosa",
+     "PZ",
+     false
+    ],
+    [
+     0.569,
+     "31097",
+     "A.F. PETROLI S.P.A.  Roverbella (Mn)",
+     "Roverbella",
+     "MN",
+     false
+    ],
+    [
+     0.569,
+     "49114",
+     "B-PETROL - MOZZECANE",
+     "Mozzecane",
+     "VR",
+     false
+    ],
+    [
+     0.569,
+     "60316",
+     "RIETI- SALARIA",
+     "Rieti",
+     "RI",
+     false
+    ],
+    [
+     0.584,
+     "59965",
+     "BASILIANO",
+     "Basiliano",
+     "UD",
+     false
+    ]
+   ],
+   "piu_alti": [
+    [
+     1.049,
+     "19409",
+     "STAZIONE DI SERVIZIO MELISSA",
+     "Jerzu",
+     "NU",
+     false
+    ],
+    [
+     1.099,
+     "14928",
+     "SP Energia Siciliana",
+     "Borgetto",
+     "PA",
+     false
+    ],
+    [
+     1.111,
+     "51787",
+     "marco pensè",
+     "Sassari",
+     "SS",
+     false
+    ],
+    [
+     1.399,
+     "4210",
+     "BORIS SERVICE",
+     "Bono",
+     "SS",
+     false
+    ]
+   ]
+  },
+  "G1": {
+   "n": 152,
+   "min": 0.649,
+   "p5": 0.679,
+   "med": 0.748,
+   "p95": 0.869,
+   "max": 0.989,
+   "sotto_1.7": 152,
+   "sopra_2.4": 0,
+   "piu_bassi": [
+    [
+     0.649,
+     "29671",
+     "STAZIONE DI SERVIZIO VENTRE- BAR E TABACCHI",
+     "Francolise",
+     "CE",
+     false
+    ],
+    [
+     0.649,
+     "50094",
+     "COPPOLA PETROLI SRL",
+     "Castel Volturno",
+     "CE",
+     false
+    ],
+    [
+     0.659,
+     "48964",
+     "fuccifuel 2",
+     "Andria",
+     "BT",
+     false
+    ],
+    [
+     0.659,
+     "56697",
+     "FUCCI FUEL 3",
+     "Barletta",
+     "BT",
+     false
+    ],
+    [
+     0.669,
+     "59062",
+     "STAR OIL PALOMBARESE",
+     "Sant'Angelo Romano",
+     "RM",
+     false
+    ],
+    [
+     0.678,
+     "63765",
+     "RIETI",
+     "Rieti",
+     "RI",
+     false
+    ]
+   ],
+   "piu_alti": [
+    [
+     0.9,
+     "47474",
+     "MES",
+     "Custonaci",
+     "TP",
+     false
+    ],
+    [
+     0.9,
+     "8654",
+     "motel san pietro",
+     "Castronovo Di Sicilia",
+     "PA",
+     false
+    ],
+    [
+     0.909,
+     "3918",
+     "CANTAGALLO OVEST",
+     "Casalecchio Di Reno",
+     "BO",
+     true
+    ],
+    [
+     0.989,
+     "48334",
+     "CARGAS SAS RETITALIA",
+     "Genova",
+     "GE",
+     false
+    ]
+   ]
+  },
+  "M0": {
+   "n": 1448,
+   "min": 1.0,
+   "p5": 1.599,
+   "med": 1.899,
+   "p95": 2.199,
+   "max": 4.999,
+   "sotto_1.7": 222,
+   "sopra_2.4": 6,
+   "piu_bassi": [
+    [
+     1.0,
+     "59581",
+     "Agrimetano Pottino",
+     "Resuttano",
+     "CL",
+     false
+    ],
+    [
+     1.0,
+     "61548",
+     "A.F. PETROLI MARANO VICENTINO",
+     "Marano Vicentino",
+     "VI",
+     false
+    ],
+    [
+     1.111,
+     "60588",
+     "Impianto carburanti IP Nuova Panoramica",
+     "Messina",
+     "ME",
+     false
+    ],
+    [
+     1.24,
+     "16477",
+     "STAR OIL",
+     "Torre Santa Susanna",
+     "BR",
+     false
+    ],
+    [
+     1.25,
+     "21779",
+     "METANO PER AUTO C.M.G.",
+     "Mortara",
+     "PV",
+     false
+    ],
+    [
+     1.319,
+     "53956",
+     "AREA DI SERVIZIO IP",
+     "Brescia",
+     "BS",
+     false
+    ]
+   ],
+   "piu_alti": [
+    [
+     2.557,
+     "60378",
+     "JONIA CARBURANTI",
+     "Riposto",
+     "CT",
+     false
+    ],
+    [
+     2.599,
+     "56155",
+     "ITALMARE - VILLARICCA",
+     "Villaricca",
+     "NA",
+     false
+    ],
+    [
+     2.999,
+     "53156",
+     "DB Carburanti Cefalù",
+     "Cefalù",
+     "PA",
+     false
+    ],
+    [
+     4.999,
+     "50753",
+     "AREA DI SERVIZIO FORMIGINE",
+     "Formigine",
+     "MO",
+     false
+    ]
+   ]
+  },
+  "M1": {
+   "n": 99,
+   "min": 1.315,
+   "p5": 1.499,
+   "med": 1.859,
+   "p95": 2.109,
+   "max": 2.199,
+   "sotto_1.7": 26,
+   "sopra_2.4": 0,
+   "piu_bassi": [
+    [
+     1.315,
+     "54303",
+     "IL GIGANTE SELF H24 -VILLASANTA-",
+     "Villasanta",
+     "MB",
+     false
+    ],
+    [
+     1.39,
+     "52329",
+     "Bosco Gerolo Valtrebbia Biometano",
+     "Rivergaro",
+     "PC",
+     false
+    ],
+    [
+     1.399,
+     "41522",
+     "B.CARBURANTI Via Prov.le Pianura",
+     "Pozzuoli",
+     "NA",
+     false
+    ],
+    [
+     1.459,
+     "50291",
+     "Rezzato",
+     "Rezzato",
+     "BS",
+     false
+    ],
+    [
+     1.499,
+     "35428",
+     "ENI SAN DONATO METANO",
+     "San Donato Milanese",
+     "MI",
+     false
+    ],
+    [
+     1.552,
+     "50282",
+     "Curno",
+     "Curno",
+     "BG",
+     false
+    ]
+   ],
+   "piu_alti": [
+    [
+     2.194,
+     "18012",
+     "LS1 SERVICE IP",
+     "Carmagnola",
+     "TO",
+     false
+    ],
+    [
+     2.199,
+     "47939",
+     "Castelfranco Veneto Azzalini Energie",
+     "Castelfranco Veneto",
+     "TV",
+     false
+    ],
+    [
+     2.199,
+     "51933",
+     "OIL ITALIA LONGARONE",
+     "Longarone",
+     "BL",
+     false
+    ],
+    [
+     2.199,
+     "55363",
+     "Azzalini Energie Belluno Metano",
+     "Belluno",
+     "BL",
+     false
+    ]
+   ]
+  }
+ }
+}
