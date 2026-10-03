@@ -42,6 +42,7 @@ jobs:
         run: |
           mkdir -p _site/data
           cp index.html app.js lib.js style.css province.json manifest.webmanifest icon.svg _site/
+          cp -r icons _site/icons
           cp data/pompe.json data/meta.json data/history.json _site/data/
 
       - uses: actions/configure-pages@v5
