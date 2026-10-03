@@ -1,0 +1,61 @@
+name: Aggiorna prezzi e pubblica
+
+on:
+  schedule:
+    # ogni mattina, due tentativi (orari UTC): il secondo recupera un eventuale ritardo del Ministero
+    - cron: '20 6 * * *'
+    - cron: '20 10 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Scarica i prezzi del Ministero e prepara i dati
+        run: python scripts/build_data.py
+
+      - name: Salva lo storico delle medie
+        run: |
+          git config user.name "pompa-giusta-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/history.json
+          git diff --cached --quiet || (git commit -m "Aggiorna storico delle medie" && git push)
+
+      - name: Prepara il sito
+        run: |
+          mkdir -p _site/data
+          cp index.html app.js lib.js style.css province.json manifest.webmanifest icon.svg _site/
+          cp data/pompe.json data/meta.json data/history.json _site/data/
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

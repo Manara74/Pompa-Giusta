@@ -1,0 +1,14 @@
+{
+  "name": "Pompa Giusta",
+  "short_name": "Pompa Giusta",
+  "description": "Prezzi dei carburanti in Italia a confronto con la media della regione.",
+  "lang": "it",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#edf0ef",
+  "theme_color": "#0e5c55",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pompa Giusta</title>
+<meta name="description" content="Prezzi dei carburanti in Italia a confronto con la media della regione, con percorso, vicino a te e servizi.">
+<meta name="theme-color" content="#0e5c55">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Pompa Giusta</h1>
+      <p>Il prezzo di ogni distributore, confrontato con la media della sua regione.</p>
+    </div>
+    <div class="status">
+      <span class="chip" id="chipData">Carico i prezzi…</span>
+      <button class="btn ghost small" id="btnInfo" type="button">Info</button>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs" aria-label="Sezioni">
+    <button type="button" data-tab="zona" class="on">Zona</button>
+    <button type="button" data-tab="vicino">Vicino a me</button>
+    <button type="button" data-tab="percorso">Percorso</button>
+  </nav>
+
+  <section class="panel" aria-label="Filtri comuni">
+    <div class="grid">
+      <div class="field wide"><span>Carburante</span>
+        <div class="seg" id="segFuel" role="group" aria-label="Carburante">
+          <button type="button" data-f="B">Benzina</button><button type="button" data-f="D">Gasolio</button><button type="button" data-f="G">GPL</button><button type="button" data-f="M">Metano</button>
+        </div></div>
+      <div class="field"><span>Modalità</span>
+        <div class="seg" id="segMode" role="group" aria-label="Modalità">
+          <button type="button" data-m="1">Self</button><button type="button" data-m="0">Servito</button>
+        </div></div>
+      <div class="field"><span>Litri del pieno</span><input id="litri" type="number" inputmode="decimal" min="1" max="200" step="1" value="40"></div>
+      <div class="field"><span>Consumo (l/100 km)</span><input id="consumo" type="number" inputmode="decimal" min="1" max="40" step="0.1" value="6.5"></div>
+    </div>
+    <div class="field"><span>Servizi richiesti</span>
+      <div class="chips" id="chipsSv" role="group" aria-label="Servizi richiesti"></div></div>
+    <p class="hint">I servizi arrivano da OpenStreetMap, scritta dai volontari: se uno manca, il distributore potrebbe averlo comunque. Puoi segnarlo tu aprendo la scheda del distributore.</p>
+  </section>
+
+  <!-- ZONA -->
+  <section id="viewZona" class="view">
+    <section class="panel" aria-label="Zona">
+      <div class="grid">
+        <div class="field"><span>Provincia</span><select id="selProv"></select></div>
+        <div class="field"><span>Comune</span><select id="selComune"></select></div>
+        <div class="field"><span>Bandiera</span><select id="selBrand"></select></div>
+        <div class="field"><span>Strada</span>
+          <select id="selTipo"><option value="all">Tutti gli impianti</option><option value="road">Solo fuori autostrada</option><option value="hw">Solo autostrada</option></select></div>
+      </div>
+      <div class="chips"><button type="button" id="btnFav">Solo preferiti</button></div>
+    </section>
+    <section class="summary" id="summary" aria-label="Riepilogo"></section>
+    <p class="verdict" id="verdictText"></p>
+    <div class="layout">
+      <main>
+        <ul class="list" id="list"></ul>
+        <div class="center"><button class="btn ghost more" id="btnMore" type="button" hidden>Mostra altri distributori</button></div>
+      </main>
+      <aside class="side">
+        <div class="panel"><h3>Come sono distribuiti i prezzi in provincia</h3><div id="histo"></div><p class="hint" id="histoHint"></p></div>
+        <div class="panel"><h3>Andamento della media regionale</h3><div id="trend"></div></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- VICINO A ME -->
+  <section id="viewVicino" class="view" hidden>
+    <section class="panel">
+      <div class="inline">
+        <button class="btn" id="btnGeo" type="button">Usa la mia posizione</button>
+        <div class="field" style="min-width:140px"><span>Raggio</span>
+          <select id="selRadius"><option value="2">2 km</option><option value="5" selected>5 km</option><option value="10">10 km</option><option value="20">20 km</option></select></div>
+        <div class="field" style="min-width:180px"><span>Ordina per</span>
+          <select id="selSort"><option value="conv">Più conveniente (viaggio incluso)</option><option value="price">Prezzo</option><option value="dist">Distanza</option></select></div>
+      </div>
+      <p class="msg" id="nearMsg" role="status" aria-live="polite"></p>
+    </section>
+    <p class="verdict" id="nearSum" hidden></p>
+    <ul class="list" id="nearList"></ul>
+    <div class="center"><button class="btn ghost more" id="btnMoreNear" type="button" hidden>Mostra altri distributori</button></div>
+  </section>
+
+  <!-- PERCORSO -->
+  <section id="viewPercorso" class="view" hidden>
+    <section class="panel">
+      <div class="row-inputs">
+        <div class="field"><span>Partenza</span><input id="inFrom" type="text" placeholder="Via, numero, comune" autocomplete="street-address"></div>
+        <div class="field"><span>Arrivo</span><input id="inTo" type="text" placeholder="Via, numero, comune" autocomplete="off"></div>
+      </div>
+      <div class="inline">
+        <button class="btn small ghost" id="btnHomeWork" type="button" disabled>Casa → Lavoro</button>
+        <button class="btn small ghost" id="btnWorkHome" type="button" disabled>Lavoro → Casa</button>
+        <button class="btn small ghost" id="btnSaveHome" type="button">Salva partenza come Casa</button>
+        <button class="btn small ghost" id="btnSaveWork" type="button">Salva arrivo come Lavoro</button>
+      </div>
+      <div class="inline">
+        <div class="field" style="min-width:180px"><span>Deviazione massima</span>
+          <select id="selDetour"><option value="0.5">500 m dal percorso</option><option value="1">1 km dal percorso</option><option value="2" selected>2 km dal percorso</option><option value="3">3 km dal percorso</option><option value="5">5 km dal percorso</option></select></div>
+        <button class="btn" id="btnRoute" type="button">Cerca sul percorso</button>
+      </div>
+      <p class="msg" id="routeMsg" role="status" aria-live="polite"></p>
+      <p class="hint">Gli indirizzi si salvano solo su questo telefono. Per trovarli e tracciare il percorso vengono inviati ai servizi pubblici di OpenStreetMap.</p>
+    </section>
+    <p class="verdict" id="routeSum" hidden></p>
+    <div id="map" hidden></div>
+    <ul class="list" id="routeList"></ul>
+    <div class="center"><button class="btn ghost more" id="btnMoreRoute" type="button" hidden>Mostra altri distributori</button></div>
+  </section>
+
+  <footer>
+    Fonte dei prezzi: dati aperti del Ministero delle Imprese e del Made in Italy (licenza IODL 2.0), in vigore alle 8 del giorno precedente alla pubblicazione. Servizi, mappe e percorsi: OpenStreetMap e contributori. Le medie escludono gli impianti autostradali e i carburanti speciali, e scartano i prezzi comunicati più di 8 giorni prima.
+  </footer>
+</div>
+
+<div id="infoPanel" hidden>
+  <div class="box" role="dialog" aria-modal="true" aria-labelledby="infoTitle">
+    <h2 id="infoTitle">Come funziona Pompa Giusta</h2>
+    <ul>
+      <li>I prezzi si aggiornano da soli ogni mattina dai dati aperti del Ministero. Sono quelli comunicati dai gestori, quindi possono cambiare durante il giorno.</li>
+      <li>La freccia verde o rossa dice di quanti centesimi al litro il distributore sta sotto o sopra la media della sua regione (impianti autostradali esclusi).</li>
+      <li>Nelle viste «Vicino a me» e «Percorso» il costo del pieno include il carburante consumato per la deviazione, stimata da te al distributore e ritorno. È una stima, non un calcolo sulle strade.</li>
+      <li>I servizi vengono da OpenStreetMap. Il gonfiaggio indica solo la presenza dell'aria compressa: non si sa se ci sia il manometro. Ricarica dell'aria condizionata e orari non sono disponibili.</li>
+      <li>Casa, lavoro, preferiti e servizi che segni tu restano solo su questo telefono.</li>
+      <li>Per averla come app: dal menu del browser scegli «Aggiungi a schermata Home».</li>
+    </ul>
+    <h3>Se i prezzi automatici non ci sono</h3>
+    <p class="hint">Scarica dal sito del Ministero i file «Prezzi alle 8» e «Anagrafica impianti» e trascinali qui: li leggo direttamente nel telefono.</p>
+    <div class="drop" id="drop"><span>Trascina qui i file CSV</span><label class="btn small" for="files">Scegli i file</label><input id="files" type="file" accept=".csv,.txt,text/csv" multiple></div>
+    <p class="msg" id="msg" role="status" aria-live="polite"></p>
+    <button class="btn" id="btnCloseInfo" type="button">Chiudi</button>
+  </div>
+</div>
+
+<script src="lib.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin></script>
+<script src="app.js"></script>
+</body>
+</html>
