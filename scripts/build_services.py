@@ -23,7 +23,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ENDPOINTS = [
     'https://overpass-api.de/api/interpreter',
     'https://overpass.kumi.systems/api/interpreter',
+    'https://overpass.private.coffee/api/interpreter',
 ]
+DEADLINE = time.time() + 150 * 60  # dopo 2 ore e mezza salvo quello che ho, senza farmi interrompere
 UA = 'PompaGiusta/1.0 (+https://github.com/Manara74/pompa-giusta)'
 
 REGIONS = {
@@ -35,7 +37,7 @@ REGIONS = {
     'IT-23': "Valle d'Aosta", 'IT-34': 'Veneto',
 }
 
-QUERY = """[out:json][timeout:240];
+QUERY = """[out:json][timeout:120];
 area["ISO3166-2"="%s"]->.a;
 nwr["amenity"="fuel"](area.a)->.f;
 (
@@ -62,11 +64,11 @@ FAST_SOCKETS = ('socket:type2_combo', 'socket:chademo', 'socket:ccs')
 def post(endpoint, query):
     data = urllib.parse.urlencode({'data': query}).encode()
     req = urllib.request.Request(endpoint, data=data, headers={'User-Agent': UA})
-    with urllib.request.urlopen(req, timeout=300) as r:
+    with urllib.request.urlopen(req, timeout=150) as r:
         return json.loads(r.read().decode('utf-8'))
 
 
-def overpass(query, tries=4):
+def overpass(query, tries=6):
     last = None
     for attempt in range(tries):
         endpoint = ENDPOINTS[attempt % len(ENDPOINTS)]
@@ -75,7 +77,9 @@ def overpass(query, tries=4):
         except (urllib.error.URLError, TimeoutError, ValueError, ConnectionError) as e:
             last = e
             print('  tentativo %d non riuscito (%s)' % (attempt + 1, e), file=sys.stderr)
-            time.sleep(30 * (attempt + 1))
+            if time.time() > DEADLINE:
+                break
+            time.sleep(min(20 * (attempt + 1), 60))
     raise RuntimeError(last)
 
 
@@ -99,7 +103,10 @@ def fetch_region(iso, name):
         print('  regione intera non riuscita (%s): provo provincia per provincia' % e, file=sys.stderr)
     out, ok = [], 0
     for sigla in province_codes(name):
-        time.sleep(15)
+        if time.time() > DEADLINE:
+            print('  tempo quasi finito: mi fermo', file=sys.stderr)
+            break
+        time.sleep(10)
         try:
             els = overpass(QUERY % ('IT-' + sigla)).get('elements', [])
             out.extend(process(els, name))
@@ -237,7 +244,9 @@ def main():
     print('Regioni da aggiornare: %s' % (', '.join(todo) or 'nessuna'))
     fresh, failed = [], []
     for iso, name in REGIONS.items():
-        if name not in todo:
+        if name not in todo or time.time() > DEADLINE:
+            if name in todo:
+                failed.append(name)
             fresh.extend([e2 for e2 in previous if e2.get('g') == name])
             continue
         print('Regione %s (%s)...' % (name, iso))
