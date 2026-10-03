@@ -119,7 +119,7 @@ def parse_table(text):
                 return i
         return -1
 
-    return {'meta': ' '.join(lines[:h]), 'col': col, 'rows': rows[1:]}
+    return {'meta': ' '.join(lines[:h]), 'col': col, 'cols': cols, 'rows': rows[1:]}
 
 
 def norm(s):
@@ -179,12 +179,29 @@ def to_float(s):
         return None
 
 
+def realign(row, ncols):
+    """Se un nome o un indirizzo contiene il separatore, la riga ha colonne in piu' e i campi
+    si spostano. Riallineo ancorandomi al tipo impianto (inizio) e ad comune/provincia/lat/lon (fine)."""
+    if len(row) <= ncols:
+        return row
+    j = next((i for i in range(3, len(row) - 4) if row[i].strip().lower() in ('stradale', 'autostradale')), None)
+    if j is None:
+        return row
+    mid = row[j + 1:-4]
+    if not mid:
+        return row
+    gestore = ' '.join(x.strip() for x in row[1:j - 1])
+    return [row[0], gestore, row[j - 1], row[j], mid[0], ' '.join(x.strip() for x in mid[1:])] + row[-4:]
+
+
 def read_anagrafica(text, prov):
     t = parse_table(text)
     c = {k: t['col'](v) for k, v in dict(
         id='idimpianto', brand='bandiera', tipo='tipo', name='nome', addr='indirizzo',
         com='comune', prov='provincia', lat='latitudine', lon='longitudine').items()}
     out = {}
+    ncols = max(c.values()) + 1
+    anomalies = []
 
     def get(row, k):
         i = c[k]
@@ -194,10 +211,16 @@ def read_anagrafica(text, prov):
         sid = get(row, 'id')
         if not sid:
             continue
+        if len(row) != len(t['cols']):
+            anomalies.append(('colonne %d invece di %d' % (len(row), len(t['cols'])), '|'.join(row)))
+            row = realign(row, len(t['cols']))
         lat, lon = to_float(get(row, 'lat')), to_float(get(row, 'lon'))
         if lat is None or lon is None or not (35 < lat < 48 and 6 < lon < 19):
             lat = lon = None
         code = prov.sigla(get(row, 'prov'))
+        if code not in prov.by_code:
+            anomalies.append(('provincia sconosciuta', '|'.join(row)))
+            continue
         out[sid] = {
             'i': sid,
             'b': brand_title(get(row, 'brand')) or 'Altro',
@@ -208,7 +231,7 @@ def read_anagrafica(text, prov):
             'la': lat, 'lo': lon,
             'h': 1 if 'autostrad' in get(row, 'tipo').lower() else 0,
         }
-    return out
+    return out, anomalies
 
 
 def read_prezzi(text):
@@ -339,7 +362,7 @@ def main():
         a_text = fetch_first(a_urls, 'anagrafica')
         p_text = fetch_first(p_urls, 'prezzi')
 
-    anag = read_anagrafica(a_text, prov)
+    anag, anomalies = read_anagrafica(a_text, prov)
     prices, date, stale = read_prezzi(p_text)
 
     stations = []
@@ -378,6 +401,11 @@ def main():
         del hist[d]
     with open(hist_path, 'w', encoding='utf-8') as f:
         json.dump(hist, f, ensure_ascii=False, separators=(',', ':'), sort_keys=True)
+
+    with open(os.path.join(args.out, 'anomalie.json'), 'w', encoding='utf-8') as f:
+        json.dump({'date': date, 'totale': len(anomalies),
+                   'righe': [{'motivo': m, 'riga': r} for m, r in anomalies[:80]]},
+                  f, ensure_ascii=False, indent=1)
 
     print('Fatto: %d impianti, prezzi del %s, %d prezzi scartati perche\' vecchi, %d con servizi.' %
           (len(stations), date, stale, matched))
