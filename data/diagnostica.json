@@ -1,16 +1,24 @@
 {
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "keys": {
   "B0": {
-   "n": 13651,
+   "n": 13656,
    "min": 1.206,
    "p5": 1.994,
    "med": 2.2,
-   "p95": 2.409,
+   "p95": 2.393,
    "max": 3.25,
-   "sotto_1.7": 15,
-   "sopra_2.4": 741,
+   "sotto_1.7": 14,
+   "sopra_2.4": 539,
    "piu_bassi": [
+    [
+     1.206,
+     "22628",
+     "GES.CAR. SAS",
+     "Livigno",
+     "SO",
+     false
+    ],
     [
      1.206,
      "9205",
@@ -50,25 +58,9 @@
      "Livigno",
      "SO",
      false
-    ],
-    [
-     1.629,
-     "51253",
-     "C-ENERGIA",
-     "Livigno",
-     "SO",
-     false
     ]
    ],
    "piu_alti": [
-    [
-     2.824,
-     "21507",
-     "IP",
-     "Prato",
-     "PO",
-     false
-    ],
     [
      2.869,
      "12654",
@@ -86,6 +78,14 @@
      false
     ],
     [
+     2.99,
+     "32550",
+     "Barbato Petroli",
+     "Teverola",
+     "CE",
+     false
+    ],
+    [
      3.25,
      "60141",
      "NAUTILUS AVIATION SPA LINOSA",
@@ -96,15 +96,23 @@
    ]
   },
   "B1": {
-   "n": 20079,
+   "n": 20078,
    "min": 1.206,
    "p5": 1.989,
-   "med": 2.029,
+   "med": 1.999,
    "p95": 2.199,
    "max": 2.869,
-   "sotto_1.7": 80,
-   "sopra_2.4": 38,
+   "sotto_1.7": 77,
+   "sopra_2.4": 37,
    "piu_bassi": [
+    [
+     1.206,
+     "22628",
+     "GES.CAR. SAS",
+     "Livigno",
+     "SO",
+     false
+    ],
     [
      1.206,
      "9205",
@@ -144,14 +152,6 @@
      "Roma",
      "RM",
      false
-    ],
-    [
-     1.575,
-     "60391",
-     "BOMARZO",
-     "Bomarzo",
-     "VT",
-     false
     ]
    ],
    "piu_alti": [
@@ -190,29 +190,29 @@
    ]
   },
   "D0": {
-   "n": 13632,
+   "n": 13638,
    "min": 1.342,
    "p5": 2.19,
    "med": 2.4,
-   "p95": 2.629,
+   "p95": 2.599,
    "max": 3.659,
    "sotto_1.7": 8,
-   "sopra_2.4": 5939,
+   "sopra_2.4": 5565,
    "piu_bassi": [
+    [
+     1.342,
+     "22628",
+     "GES.CAR. SAS",
+     "Livigno",
+     "SO",
+     false
+    ],
     [
      1.342,
      "9205",
      "ENI TREPALLE",
      "Livigno",
      "SO",
-     false
-    ],
-    [
-     1.599,
-     "54868",
-     "STAR OIL",
-     "Roma",
-     "RM",
      false
     ],
     [
@@ -287,12 +287,20 @@
    "n": 20084,
    "min": 1.342,
    "p5": 2.189,
-   "med": 2.22,
-   "p95": 2.414,
+   "med": 2.199,
+   "p95": 2.399,
    "max": 2.899,
-   "sotto_1.7": 72,
-   "sopra_2.4": 1210,
+   "sotto_1.7": 71,
+   "sopra_2.4": 760,
    "piu_bassi": [
+    [
+     1.342,
+     "22628",
+     "GES.CAR. SAS",
+     "Livigno",
+     "SO",
+     false
+    ],
     [
      1.342,
      "9205",
@@ -332,14 +340,6 @@
      "Gualdo",
      "MC",
      false
-    ],
-    [
-     1.564,
-     "59873",
-     "AILANO",
-     "Ailano",
-     "CE",
-     false
     ]
    ],
    "piu_alti": [
@@ -378,13 +378,13 @@
    ]
   },
   "G0": {
-   "n": 4464,
+   "n": 4479,
    "min": 0.554,
    "p5": 0.679,
-   "med": 0.749,
+   "med": 0.759,
    "p95": 0.898,
    "max": 1.399,
-   "sotto_1.7": 4464,
+   "sotto_1.7": 4479,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
@@ -405,22 +405,6 @@
     ],
     [
      0.569,
-     "31097",
-     "A.F. PETROLI S.P.A.  Roverbella (Mn)",
-     "Roverbella",
-     "MN",
-     false
-    ],
-    [
-     0.569,
-     "49114",
-     "B-PETROL - MOZZECANE",
-     "Mozzecane",
-     "VR",
-     false
-    ],
-    [
-     0.569,
      "60316",
      "RIETI- SALARIA",
      "Rieti",
@@ -433,6 +417,22 @@
      "BASILIANO",
      "Basiliano",
      "UD",
+     false
+    ],
+    [
+     0.599,
+     "58713",
+     "POMPA BIANCA GIOIA DEI MARSI LOC. AQUILELLA",
+     "Gioia Dei Marsi",
+     "AQ",
+     false
+    ],
+    [
+     0.599,
+     "60402",
+     "VITERBO - UMBRO LAZIALE KM 61",
+     "Viterbo",
+     "VT",
      false
     ]
    ],
@@ -474,21 +474,13 @@
   "G1": {
    "n": 152,
    "min": 0.649,
-   "p5": 0.679,
-   "med": 0.748,
+   "p5": 0.687,
+   "med": 0.749,
    "p95": 0.869,
    "max": 0.989,
    "sotto_1.7": 152,
    "sopra_2.4": 0,
    "piu_bassi": [
-    [
-     0.649,
-     "29671",
-     "STAZIONE DI SERVIZIO VENTRE- BAR E TABACCHI",
-     "Francolise",
-     "CE",
-     false
-    ],
     [
      0.649,
      "50094",
@@ -528,6 +520,14 @@
      "Rieti",
      "RI",
      false
+    ],
+    [
+     0.679,
+     "33636",
+     "CARBURANTI S.N.C. DI GIORGIO VARRIALE",
+     "Napoli",
+     "NA",
+     false
     ]
    ],
    "piu_alti": [
@@ -566,13 +566,13 @@
    ]
   },
   "M0": {
-   "n": 1448,
+   "n": 1457,
    "min": 1.0,
    "p5": 1.599,
    "med": 1.899,
    "p95": 2.199,
    "max": 4.999,
-   "sotto_1.7": 222,
+   "sotto_1.7": 207,
    "sopra_2.4": 6,
    "piu_bassi": [
     [
@@ -589,14 +589,6 @@
      "A.F. PETROLI MARANO VICENTINO",
      "Marano Vicentino",
      "VI",
-     false
-    ],
-    [
-     1.111,
-     "60588",
-     "Impianto carburanti IP Nuova Panoramica",
-     "Messina",
-     "ME",
      false
     ],
     [
@@ -621,6 +613,14 @@
      "AREA DI SERVIZIO IP",
      "Brescia",
      "BS",
+     false
+    ],
+    [
+     1.359,
+     "40678",
+     "Stazione di servizio F.ll.i Buono",
+     "Terzigno",
+     "NA",
      false
     ]
    ],
@@ -660,11 +660,11 @@
    ]
   },
   "M1": {
-   "n": 99,
+   "n": 100,
    "min": 1.315,
-   "p5": 1.499,
-   "med": 1.859,
-   "p95": 2.109,
+   "p5": 1.552,
+   "med": 1.879,
+   "p95": 2.099,
    "max": 2.199,
    "sotto_1.7": 26,
    "sopra_2.4": 0,
@@ -720,11 +720,11 @@
    ],
    "piu_alti": [
     [
-     2.194,
-     "18012",
-     "LS1 SERVICE IP",
-     "Carmagnola",
-     "TO",
+     2.109,
+     "56062",
+     "sanrocco carburanti srl",
+     "Altamura",
+     "BA",
      false
     ],
     [
