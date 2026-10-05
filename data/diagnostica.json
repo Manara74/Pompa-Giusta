@@ -1,24 +1,16 @@
 {
- "date": "2026-10-03",
+ "date": "2026-10-04",
  "keys": {
   "B0": {
-   "n": 13656,
+   "n": 13621,
    "min": 1.206,
-   "p5": 1.994,
+   "p5": 1.99,
    "med": 2.2,
-   "p95": 2.393,
+   "p95": 2.389,
    "max": 3.25,
    "sotto_1.7": 14,
-   "sopra_2.4": 539,
+   "sopra_2.4": 484,
    "piu_bassi": [
-    [
-     1.206,
-     "22628",
-     "GES.CAR. SAS",
-     "Livigno",
-     "SO",
-     false
-    ],
     [
      1.206,
      "9205",
@@ -33,6 +25,14 @@
      "Via Degli Angeli",
      "Roma",
      "RM",
+     false
+    ],
+    [
+     1.621,
+     "22628",
+     "GES.CAR. SAS",
+     "Livigno",
+     "SO",
      false
     ],
     [
@@ -96,14 +96,14 @@
    ]
   },
   "B1": {
-   "n": 20078,
+   "n": 20055,
    "min": 1.206,
    "p5": 1.989,
    "med": 1.999,
    "p95": 2.199,
    "max": 2.869,
    "sotto_1.7": 77,
-   "sopra_2.4": 37,
+   "sopra_2.4": 38,
    "piu_bassi": [
     [
      1.206,
@@ -190,23 +190,15 @@
    ]
   },
   "D0": {
-   "n": 13638,
+   "n": 13595,
    "min": 1.342,
    "p5": 2.19,
    "med": 2.4,
-   "p95": 2.599,
+   "p95": 2.597,
    "max": 3.659,
-   "sotto_1.7": 8,
-   "sopra_2.4": 5565,
+   "sotto_1.7": 7,
+   "sopra_2.4": 5428,
    "piu_bassi": [
-    [
-     1.342,
-     "22628",
-     "GES.CAR. SAS",
-     "Livigno",
-     "SO",
-     false
-    ],
     [
      1.342,
      "9205",
@@ -246,6 +238,14 @@
      "Cagli",
      "PU",
      false
+    ],
+    [
+     1.689,
+     "37062",
+     "AdS Agip - Candela Casello A16",
+     "Candela",
+     "FG",
+     false
     ]
    ],
    "piu_alti": [
@@ -284,14 +284,14 @@
    ]
   },
   "D1": {
-   "n": 20084,
+   "n": 20061,
    "min": 1.342,
    "p5": 2.189,
    "med": 2.199,
    "p95": 2.399,
-   "max": 2.899,
+   "max": 2.903,
    "sotto_1.7": 71,
-   "sopra_2.4": 760,
+   "sopra_2.4": 639,
    "piu_bassi": [
     [
      1.342,
@@ -344,14 +344,6 @@
    ],
    "piu_alti": [
     [
-     2.893,
-     "12348",
-     "galli agnese",
-     "Milano",
-     "MI",
-     false
-    ],
-    [
      2.899,
      "12654",
      "Staz. Carburanti De Simone Domenico",
@@ -374,17 +366,25 @@
      "Bolzano Vicentino",
      "VI",
      true
+    ],
+    [
+     2.903,
+     "12348",
+     "galli agnese",
+     "Milano",
+     "MI",
+     false
     ]
    ]
   },
   "G0": {
-   "n": 4479,
+   "n": 4476,
    "min": 0.554,
-   "p5": 0.679,
+   "p5": 0.684,
    "med": 0.759,
    "p95": 0.898,
    "max": 1.399,
-   "sotto_1.7": 4479,
+   "sotto_1.7": 4476,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
@@ -438,6 +438,14 @@
    ],
    "piu_alti": [
     [
+     1.0,
+     "45516",
+     "EASY SERVICE S.R.L. / PIOSSASCO",
+     "Piossasco",
+     "TO",
+     false
+    ],
+    [
      1.049,
      "19409",
      "STAZIONE DI SERVIZIO MELISSA",
@@ -454,14 +462,6 @@
      false
     ],
     [
-     1.111,
-     "51787",
-     "marco pensè",
-     "Sassari",
-     "SS",
-     false
-    ],
-    [
      1.399,
      "4210",
      "BORIS SERVICE",
@@ -472,13 +472,13 @@
    ]
   },
   "G1": {
-   "n": 152,
+   "n": 153,
    "min": 0.649,
-   "p5": 0.687,
-   "med": 0.749,
+   "p5": 0.679,
+   "med": 0.759,
    "p95": 0.869,
    "max": 0.989,
-   "sotto_1.7": 152,
+   "sotto_1.7": 153,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
@@ -514,19 +514,19 @@
      false
     ],
     [
+     0.677,
+     "58119",
+     "fp",
+     "San Cipirello",
+     "PA",
+     false
+    ],
+    [
      0.678,
      "63765",
      "RIETI",
      "Rieti",
      "RI",
-     false
-    ],
-    [
-     0.679,
-     "33636",
-     "CARBURANTI S.N.C. DI GIORGIO VARRIALE",
-     "Napoli",
-     "NA",
      false
     ]
    ],
@@ -566,13 +566,13 @@
    ]
   },
   "M0": {
-   "n": 1457,
+   "n": 1453,
    "min": 1.0,
    "p5": 1.599,
    "med": 1.899,
    "p95": 2.199,
    "max": 4.999,
-   "sotto_1.7": 207,
+   "sotto_1.7": 206,
    "sopra_2.4": 6,
    "piu_bassi": [
     [
