@@ -7,6 +7,22 @@ App web per confrontare i prezzi dei carburanti in Italia con la media della pro
 - **Percorso**: scrivi partenza e arrivo (per esempio casa e lavoro) e vedi i distributori lungo la strada, con il costo del pieno comprensivo della deviazione.
 - **Servizi**: lavaggio, aria/gonfiaggio, bar o negozio, ricarica elettrica, officina, WC, aperto 24 ore. I dati arrivano da OpenStreetMap e sono incompleti: se un servizio manca puoi segnarlo tu, solo sul tuo telefono.
 
+## Come usarla sul telefono
+
+Apri **https://manara74.github.io/Pompa-Giusta/** (le maiuscole contano). Non serve nessun account e non c'è niente da scaricare. Per averla come una app con la sua icona:
+
+**iPhone (iOS)**
+1. Apri il link con **Safari** (con Chrome non funziona).
+2. Tocca il pulsante di condivisione, il quadrato con la freccia in su.
+3. Scegli **Aggiungi alla schermata Home** e conferma.
+
+**Android**
+1. Apri il link con **Chrome**.
+2. Tocca i tre puntini in alto a destra.
+3. Scegli **Installa app** o **Aggiungi a schermata Home**.
+
+Casa, lavoro, preferiti e note restano sul tuo telefono. Se cancelli i dati del sito o disinstalli l'app, si perdono.
+
 ## Come si aggiorna da sola
 
 Ogni mattina GitHub esegue `scripts/build_data.py`, che scarica i file aperti del Ministero (Prezzi alle 8 e Anagrafica impianti), prepara i dati e ripubblica il sito. Ogni domenica `scripts/build_services.py` raccoglie i servizi da OpenStreetMap.
