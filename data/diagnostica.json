@@ -1,15 +1,15 @@
 {
- "date": "2026-10-04",
+ "date": "2026-10-05",
  "keys": {
   "B0": {
-   "n": 13621,
+   "n": 13625,
    "min": 1.206,
    "p5": 1.99,
    "med": 2.2,
    "p95": 2.389,
-   "max": 3.25,
+   "max": 2.99,
    "sotto_1.7": 14,
-   "sopra_2.4": 484,
+   "sopra_2.4": 448,
    "piu_bassi": [
     [
      1.206,
@@ -62,6 +62,14 @@
    ],
    "piu_alti": [
     [
+     2.824,
+     "21507",
+     "IP",
+     "Prato",
+     "PO",
+     false
+    ],
+    [
      2.869,
      "12654",
      "Staz. Carburanti De Simone Domenico",
@@ -84,27 +92,35 @@
      "Teverola",
      "CE",
      false
-    ],
-    [
-     3.25,
-     "60141",
-     "NAUTILUS AVIATION SPA LINOSA",
-     "Lampedusa E Linosa",
-     "AG",
-     false
     ]
    ]
   },
   "B1": {
-   "n": 20056,
-   "min": 1.206,
+   "n": 20063,
+   "min": 1.199,
    "p5": 1.989,
    "med": 1.999,
    "p95": 2.199,
    "max": 2.869,
-   "sotto_1.7": 77,
-   "sopra_2.4": 38,
+   "sotto_1.7": 79,
+   "sopra_2.4": 37,
    "piu_bassi": [
+    [
+     1.199,
+     "26372",
+     "ESSO",
+     "Mineo",
+     "CT",
+     false
+    ],
+    [
+     1.199,
+     "62385",
+     "KEROCARBO NARZOLE",
+     "Narzole",
+     "CN",
+     false
+    ],
     [
      1.206,
      "22628",
@@ -135,22 +151,6 @@
      "VITERBO - KM 62",
      "Viterbo",
      "VT",
-     false
-    ],
-    [
-     1.565,
-     "60399",
-     "VITERBO - TUSCANESE",
-     "Viterbo",
-     "VT",
-     false
-    ],
-    [
-     1.569,
-     "36845",
-     "Via Degli Angeli",
-     "Roma",
-     "RM",
      false
     ]
    ],
@@ -190,14 +190,14 @@
    ]
   },
   "D0": {
-   "n": 13595,
+   "n": 13599,
    "min": 1.342,
    "p5": 2.19,
    "med": 2.4,
-   "p95": 2.597,
+   "p95": 2.59,
    "max": 3.659,
    "sotto_1.7": 7,
-   "sopra_2.4": 5428,
+   "sopra_2.4": 5384,
    "piu_bassi": [
     [
      1.342,
@@ -284,14 +284,14 @@
    ]
   },
   "D1": {
-   "n": 20062,
+   "n": 20069,
    "min": 1.342,
    "p5": 2.189,
    "med": 2.199,
    "p95": 2.399,
    "max": 2.903,
    "sotto_1.7": 71,
-   "sopra_2.4": 639,
+   "sopra_2.4": 586,
    "piu_bassi": [
     [
      1.342,
@@ -378,13 +378,13 @@
    ]
   },
   "G0": {
-   "n": 4476,
+   "n": 4470,
    "min": 0.554,
-   "p5": 0.684,
+   "p5": 0.685,
    "med": 0.759,
    "p95": 0.898,
    "max": 1.399,
-   "sotto_1.7": 4476,
+   "sotto_1.7": 4470,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
@@ -438,6 +438,14 @@
    ],
    "piu_alti": [
     [
+     0.999,
+     "61730",
+     "POSTUMIA SUD",
+     "Bolzano Vicentino",
+     "VI",
+     true
+    ],
+    [
      1.0,
      "45516",
      "EASY SERVICE S.R.L. / PIOSSASCO",
@@ -451,14 +459,6 @@
      "STAZIONE DI SERVIZIO MELISSA",
      "Jerzu",
      "NU",
-     false
-    ],
-    [
-     1.099,
-     "14928",
-     "SP Energia Siciliana",
-     "Borgetto",
-     "PA",
      false
     ],
     [
@@ -566,13 +566,13 @@
    ]
   },
   "M0": {
-   "n": 1453,
+   "n": 1454,
    "min": 1.0,
    "p5": 1.599,
    "med": 1.899,
    "p95": 2.199,
    "max": 4.999,
-   "sotto_1.7": 206,
+   "sotto_1.7": 204,
    "sopra_2.4": 6,
    "piu_bassi": [
     [
@@ -666,7 +666,7 @@
    "med": 1.879,
    "p95": 2.099,
    "max": 2.199,
-   "sotto_1.7": 26,
+   "sotto_1.7": 25,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
