@@ -1,16 +1,32 @@
 {
- "date": "2026-10-05",
+ "date": "2026-10-06",
  "keys": {
   "B0": {
-   "n": 13625,
-   "min": 1.206,
+   "n": 13639,
+   "min": 1.19,
    "p5": 1.99,
    "med": 2.2,
-   "p95": 2.389,
-   "max": 2.99,
-   "sotto_1.7": 14,
-   "sopra_2.4": 448,
+   "p95": 2.379,
+   "max": 3.25,
+   "sotto_1.7": 17,
+   "sopra_2.4": 395,
    "piu_bassi": [
+    [
+     1.19,
+     "12109",
+     "BURATTINI MARCO",
+     "Roma",
+     "RM",
+     false
+    ],
+    [
+     1.199,
+     "48538",
+     "RETITALIA",
+     "Abbiategrasso",
+     "MI",
+     false
+    ],
     [
      1.206,
      "9205",
@@ -28,15 +44,7 @@
      false
     ],
     [
-     1.621,
-     "22628",
-     "GES.CAR. SAS",
-     "Livigno",
-     "SO",
-     false
-    ],
-    [
-     1.628,
+     1.618,
      "21866",
      "TOTAL ERG - LIVIGNO",
      "Livigno",
@@ -44,31 +52,15 @@
      false
     ],
     [
-     1.628,
+     1.618,
      "21869",
      "TOTAL ERG - LIVIGNO",
-     "Livigno",
-     "SO",
-     false
-    ],
-    [
-     1.628,
-     "22670",
-     "CU.BA. SRL",
      "Livigno",
      "SO",
      false
     ]
    ],
    "piu_alti": [
-    [
-     2.824,
-     "21507",
-     "IP",
-     "Prato",
-     "PO",
-     false
-    ],
     [
      2.869,
      "12654",
@@ -92,6 +84,14 @@
      "Teverola",
      "CE",
      false
+    ],
+    [
+     3.25,
+     "60141",
+     "NAUTILUS AVIATION SPA LINOSA",
+     "Lampedusa E Linosa",
+     "AG",
+     false
     ]
    ]
   },
@@ -100,17 +100,17 @@
    "min": 1.199,
    "p5": 1.989,
    "med": 1.999,
-   "p95": 2.199,
+   "p95": 2.197,
    "max": 2.869,
    "sotto_1.7": 79,
-   "sopra_2.4": 37,
+   "sopra_2.4": 32,
    "piu_bassi": [
     [
      1.199,
-     "26372",
-     "ESSO",
-     "Mineo",
-     "CT",
+     "48538",
+     "RETITALIA",
+     "Abbiategrasso",
+     "MI",
      false
     ],
     [
@@ -190,14 +190,14 @@
    ]
   },
   "D0": {
-   "n": 13599,
+   "n": 13574,
    "min": 1.342,
    "p5": 2.19,
    "med": 2.4,
-   "p95": 2.59,
-   "max": 3.659,
-   "sotto_1.7": 7,
-   "sopra_2.4": 5384,
+   "p95": 2.58,
+   "max": 3.163,
+   "sotto_1.7": 8,
+   "sopra_2.4": 6310,
    "piu_bassi": [
     [
      1.342,
@@ -205,6 +205,14 @@
      "ENI TREPALLE",
      "Livigno",
      "SO",
+     false
+    ],
+    [
+     1.599,
+     "54868",
+     "STAR OIL",
+     "Roma",
+     "RM",
      false
     ],
     [
@@ -238,17 +246,17 @@
      "Cagli",
      "PU",
      false
-    ],
-    [
-     1.689,
-     "37062",
-     "AdS Agip - Candela Casello A16",
-     "Candela",
-     "FG",
-     false
     ]
    ],
    "piu_alti": [
+    [
+     3.163,
+     "21783",
+     "IP MONDOVI' VIA CUNEO 107",
+     "Mondovì",
+     "CN",
+     false
+    ],
     [
      3.163,
      "22620",
@@ -272,26 +280,18 @@
      "Fossano",
      "CN",
      false
-    ],
-    [
-     3.659,
-     "40536",
-     "TAMOIL",
-     "Valbrembo",
-     "BG",
-     false
     ]
    ]
   },
   "D1": {
-   "n": 20069,
+   "n": 20032,
    "min": 1.342,
    "p5": 2.189,
-   "med": 2.199,
-   "p95": 2.399,
+   "med": 2.23,
+   "p95": 2.398,
    "max": 2.903,
    "sotto_1.7": 71,
-   "sopra_2.4": 586,
+   "sopra_2.4": 512,
    "piu_bassi": [
     [
      1.342,
@@ -378,13 +378,13 @@
    ]
   },
   "G0": {
-   "n": 4470,
+   "n": 4466,
    "min": 0.554,
-   "p5": 0.685,
-   "med": 0.759,
-   "p95": 0.898,
+   "p5": 0.689,
+   "med": 0.766,
+   "p95": 0.899,
    "max": 1.399,
-   "sotto_1.7": 4470,
+   "sotto_1.7": 4466,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
@@ -438,27 +438,27 @@
    ],
    "piu_alti": [
     [
-     0.999,
-     "61730",
-     "POSTUMIA SUD",
-     "Bolzano Vicentino",
-     "VI",
-     true
-    ],
-    [
-     1.0,
-     "45516",
-     "EASY SERVICE S.R.L. / PIOSSASCO",
-     "Piossasco",
-     "TO",
-     false
-    ],
-    [
      1.049,
      "19409",
      "STAZIONE DI SERVIZIO MELISSA",
      "Jerzu",
      "NU",
+     false
+    ],
+    [
+     1.099,
+     "14928",
+     "SP Energia Siciliana",
+     "Borgetto",
+     "PA",
+     false
+    ],
+    [
+     1.111,
+     "51787",
+     "marco pensè",
+     "Sassari",
+     "SS",
      false
     ],
     [
@@ -474,8 +474,8 @@
   "G1": {
    "n": 153,
    "min": 0.649,
-   "p5": 0.679,
-   "med": 0.759,
+   "p5": 0.688,
+   "med": 0.76,
    "p95": 0.869,
    "max": 0.989,
    "sotto_1.7": 153,
@@ -487,14 +487,6 @@
      "COPPOLA PETROLI SRL",
      "Castel Volturno",
      "CE",
-     false
-    ],
-    [
-     0.659,
-     "48964",
-     "fuccifuel 2",
-     "Andria",
-     "BT",
      false
     ],
     [
@@ -527,6 +519,14 @@
      "RIETI",
      "Rieti",
      "RI",
+     false
+    ],
+    [
+     0.679,
+     "33636",
+     "CARBURANTI S.N.C. DI GIORGIO VARRIALE",
+     "Napoli",
+     "NA",
      false
     ]
    ],
@@ -566,13 +566,13 @@
    ]
   },
   "M0": {
-   "n": 1454,
+   "n": 1446,
    "min": 1.0,
-   "p5": 1.599,
+   "p5": 1.602,
    "med": 1.899,
    "p95": 2.199,
    "max": 4.999,
-   "sotto_1.7": 204,
+   "sotto_1.7": 192,
    "sopra_2.4": 6,
    "piu_bassi": [
     [
@@ -662,7 +662,7 @@
   "M1": {
    "n": 100,
    "min": 1.315,
-   "p5": 1.552,
+   "p5": 1.589,
    "med": 1.879,
    "p95": 2.099,
    "max": 2.199,
@@ -710,11 +710,11 @@
      false
     ],
     [
-     1.552,
-     "50282",
-     "Curno",
-     "Curno",
-     "BG",
+     1.589,
+     "46759",
+     "PERUGIA CENTOVA 2",
+     "Perugia",
+     "PG",
      false
     ]
    ],
