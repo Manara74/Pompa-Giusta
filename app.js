@@ -172,6 +172,19 @@ function emptyMsg(where, pool, hint) {
     ? 'Qui OpenStreetMap non ha segnato questo servizio, ma il distributore potrebbe averlo: togli il filtro per vederli tutti.'
     : 'Per questa zona i dati sui servizi non sono ancora disponibili: togli il filtro per vedere tutti i distributori.');
 }
+/* Distintivo colorato della bandiera: sigla su colore tipico, non il logo ufficiale */
+const BRANDS = [['eni','Eni','#ffd400','#111'],['agip','Eni','#ffd400','#111'],['q8','Q8','#0a3f94','#fff'],['kuwait','Q8','#0a3f94','#fff'],
+  ['esso','Es','#1c4f9e','#fff'],['tamoil','Ta','#d7261e','#fff'],['api','Ip','#1d5fb4','#ffd400'],['ip','Ip','#1d5fb4','#ffd400'],
+  ['shell','Sh','#ffd100','#d4151b'],['total','To','#e2231a','#fff'],['erg','Er','#0a7a3d','#fff'],['repsol','Re','#f58220','#fff'],
+  ['bianca','PB','#6b7977','#fff'],['pompe','PB','#6b7977','#fff'],['beyfin','Be','#c0392b','#fff'],['costantin','Co','#8e44ad','#fff'],
+  ['italiana','IP','#1d5fb4','#ffd400'],['saras','Sa','#0e7490','#fff'],['self','SI','#6b7977','#fff']];
+function brandBadge(name) {
+  const n = String(name || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ');
+  const w = n.split(/ +/);
+  const m = BRANDS.find(b => w.indexOf(b[0]) >= 0) || BRANDS.find(b => b[0].length > 2 && n.indexOf(b[0]) >= 0);
+  const t = m ? m[1] : (String(name || '?').trim().slice(0, 2) || '?');
+  return '<i class="bd" style="background:' + (m ? m[2] : '#44514f') + ';color:' + (m ? m[3] : '#fff') + '" title="' + esc(name) + '">' + esc(t) + '</i>';
+}
 function rowHTML(s, o) {
   const k = key(), p = s.p[k];
   const d = o.avg != null ? p - o.avg : null;
@@ -187,7 +200,7 @@ function rowHTML(s, o) {
     '<div class="main" tabindex="0" role="button" aria-expanded="' + open + '">' +
     '<div><span class="rank">N. ' + o.rank + ' di ' + o.total + (isFav(s.id) ? ' · ★' : '') + '</span>' +
     '<div class="lcd"><span>' + PG.fmtP(p) + '</span><small>€/L</small></div></div>' +
-    '<div class="info"><b>' + esc(s.name) + '</b>' +
+    '<div class="info"><b>' + brandBadge(s.brand) + '<span>' + esc(s.name) + '</span></b>' +
     '<span class="l">' + esc(s.brand) + (s.comune ? ' · ' + esc(s.comune) : '') + (s.hw ? ' · autostrada' : '') + '</span>' +
     (s.addr ? '<span class="l">' + esc(s.addr) + '</span>' : '') +
     (o.extra ? '<span class="extra">' + o.extra + '</span>' : '') + svChips(set) + '</div>' + delta + '</div>' +
