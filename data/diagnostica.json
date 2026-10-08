@@ -1,15 +1,15 @@
 {
- "date": "2026-10-06",
+ "date": "2026-10-07",
  "keys": {
   "B0": {
-   "n": 13639,
+   "n": 13626,
    "min": 1.19,
    "p5": 1.99,
    "med": 2.2,
-   "p95": 2.379,
+   "p95": 2.374,
    "max": 3.25,
-   "sotto_1.7": 17,
-   "sopra_2.4": 395,
+   "sotto_1.7": 16,
+   "sopra_2.4": 350,
    "piu_bassi": [
     [
      1.19,
@@ -17,14 +17,6 @@
      "BURATTINI MARCO",
      "Roma",
      "RM",
-     false
-    ],
-    [
-     1.199,
-     "48538",
-     "RETITALIA",
-     "Abbiategrasso",
-     "MI",
      false
     ],
     [
@@ -41,6 +33,14 @@
      "Via Degli Angeli",
      "Roma",
      "RM",
+     false
+    ],
+    [
+     1.613,
+     "51363",
+     "Global Srl",
+     "Livigno",
+     "SO",
      false
     ],
     [
@@ -78,11 +78,11 @@
      false
     ],
     [
-     2.99,
-     "32550",
-     "Barbato Petroli",
-     "Teverola",
-     "CE",
+     2.999,
+     "19954",
+     "ITALIANA PETROLI",
+     "Bricherasio",
+     "TO",
      false
     ],
     [
@@ -96,23 +96,15 @@
    ]
   },
   "B1": {
-   "n": 20063,
+   "n": 20071,
    "min": 1.199,
    "p5": 1.989,
    "med": 1.999,
-   "p95": 2.197,
-   "max": 2.869,
-   "sotto_1.7": 79,
-   "sopra_2.4": 32,
+   "p95": 2.189,
+   "max": 2.999,
+   "sotto_1.7": 78,
+   "sopra_2.4": 30,
    "piu_bassi": [
-    [
-     1.199,
-     "48538",
-     "RETITALIA",
-     "Abbiategrasso",
-     "MI",
-     false
-    ],
     [
      1.199,
      "62385",
@@ -152,17 +144,17 @@
      "Viterbo",
      "VT",
      false
+    ],
+    [
+     1.565,
+     "60399",
+     "VITERBO - TUSCANESE",
+     "Viterbo",
+     "VT",
+     false
     ]
    ],
    "piu_alti": [
-    [
-     2.699,
-     "61729",
-     "POSTUMIA NORD",
-     "Bolzano Vicentino",
-     "VI",
-     true
-    ],
     [
      2.699,
      "61730",
@@ -186,18 +178,26 @@
      "Milano",
      "MI",
      false
+    ],
+    [
+     2.999,
+     "19954",
+     "ITALIANA PETROLI",
+     "Bricherasio",
+     "TO",
+     false
     ]
    ]
   },
   "D0": {
-   "n": 13574,
+   "n": 13587,
    "min": 1.342,
-   "p5": 2.19,
-   "med": 2.4,
-   "p95": 2.58,
+   "p5": 2.199,
+   "med": 2.42,
+   "p95": 2.589,
    "max": 3.163,
-   "sotto_1.7": 8,
-   "sopra_2.4": 6310,
+   "sotto_1.7": 7,
+   "sopra_2.4": 7345,
    "piu_bassi": [
     [
      1.342,
@@ -212,14 +212,6 @@
      "54868",
      "STAR OIL",
      "Roma",
-     "RM",
-     false
-    ],
-    [
-     1.639,
-     "58876",
-     "MONTEPORZIO",
-     "Monte Porzio Catone",
      "RM",
      false
     ],
@@ -245,6 +237,14 @@
      "ANGELI SABRINA",
      "Cagli",
      "PU",
+     false
+    ],
+    [
+     1.689,
+     "37062",
+     "AdS Agip - Candela Casello A16",
+     "Candela",
+     "FG",
      false
     ]
    ],
@@ -284,14 +284,14 @@
    ]
   },
   "D1": {
-   "n": 20032,
+   "n": 20071,
    "min": 1.342,
-   "p5": 2.189,
-   "med": 2.23,
-   "p95": 2.398,
-   "max": 2.903,
+   "p5": 2.19,
+   "med": 2.25,
+   "p95": 2.389,
+   "max": 2.899,
    "sotto_1.7": 71,
-   "sopra_2.4": 512,
+   "sopra_2.4": 478,
    "piu_bassi": [
     [
      1.342,
@@ -344,6 +344,14 @@
    ],
    "piu_alti": [
     [
+     2.799,
+     "61542",
+     "GR Green Carburanti",
+     "Pantelleria",
+     "TP",
+     false
+    ],
+    [
      2.899,
      "12654",
      "Staz. Carburanti De Simone Domenico",
@@ -366,25 +374,17 @@
      "Bolzano Vicentino",
      "VI",
      true
-    ],
-    [
-     2.903,
-     "12348",
-     "galli agnese",
-     "Milano",
-     "MI",
-     false
     ]
    ]
   },
   "G0": {
-   "n": 4466,
+   "n": 4469,
    "min": 0.554,
-   "p5": 0.689,
-   "med": 0.766,
+   "p5": 0.695,
+   "med": 0.769,
    "p95": 0.899,
    "max": 1.399,
-   "sotto_1.7": 4466,
+   "sotto_1.7": 4469,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
@@ -475,7 +475,7 @@
    "n": 153,
    "min": 0.649,
    "p5": 0.688,
-   "med": 0.76,
+   "med": 0.769,
    "p95": 0.869,
    "max": 0.989,
    "sotto_1.7": 153,
@@ -566,9 +566,9 @@
    ]
   },
   "M0": {
-   "n": 1446,
+   "n": 1451,
    "min": 1.0,
-   "p5": 1.602,
+   "p5": 1.619,
    "med": 1.899,
    "p95": 2.199,
    "max": 4.999,
@@ -600,19 +600,19 @@
      false
     ],
     [
-     1.25,
-     "21779",
-     "METANO PER AUTO C.M.G.",
-     "Mortara",
-     "PV",
-     false
-    ],
-    [
      1.319,
      "53956",
      "AREA DI SERVIZIO IP",
      "Brescia",
      "BS",
+     false
+    ],
+    [
+     1.35,
+     "21779",
+     "METANO PER AUTO C.M.G.",
+     "Mortara",
+     "PV",
      false
     ],
     [
@@ -626,7 +626,7 @@
    ],
    "piu_alti": [
     [
-     2.557,
+     2.577,
      "60378",
      "JONIA CARBURANTI",
      "Riposto",
