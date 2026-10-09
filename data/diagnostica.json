@@ -1,15 +1,15 @@
 {
- "date": "2026-10-07",
+ "date": "2026-10-08",
  "keys": {
   "B0": {
    "n": 13629,
    "min": 1.19,
    "p5": 1.99,
    "med": 2.2,
-   "p95": 2.374,
+   "p95": 2.359,
    "max": 3.25,
    "sotto_1.7": 16,
-   "sopra_2.4": 350,
+   "sopra_2.4": 317,
    "piu_bassi": [
     [
      1.19,
@@ -79,10 +79,10 @@
     ],
     [
      2.999,
-     "19954",
-     "ITALIANA PETROLI",
-     "Bricherasio",
-     "TO",
+     "25427",
+     "STAZIONE RIFORNIMENTO ESSO MUDADU SALVATORE",
+     "Usini",
+     "SS",
      false
     ],
     [
@@ -96,23 +96,15 @@
    ]
   },
   "B1": {
-   "n": 20078,
-   "min": 1.199,
+   "n": 20069,
+   "min": 1.206,
    "p5": 1.989,
    "med": 1.999,
-   "p95": 2.189,
-   "max": 2.999,
-   "sotto_1.7": 78,
-   "sopra_2.4": 30,
+   "p95": 2.187,
+   "max": 2.988,
+   "sotto_1.7": 77,
+   "sopra_2.4": 31,
    "piu_bassi": [
-    [
-     1.199,
-     "62385",
-     "KEROCARBO NARZOLE",
-     "Narzole",
-     "CN",
-     false
-    ],
     [
      1.206,
      "22628",
@@ -152,6 +144,14 @@
      "Viterbo",
      "VT",
      false
+    ],
+    [
+     1.569,
+     "36845",
+     "Via Degli Angeli",
+     "Roma",
+     "RM",
+     false
     ]
    ],
    "piu_alti": [
@@ -180,27 +180,27 @@
      false
     ],
     [
-     2.999,
-     "19954",
-     "ITALIANA PETROLI",
-     "Bricherasio",
+     2.988,
+     "33811",
+     "Economy S.r.l-Moncalieri, via sestriere",
+     "Moncalieri",
      "TO",
      false
     ]
    ]
   },
   "D0": {
-   "n": 13590,
-   "min": 1.342,
-   "p5": 2.199,
+   "n": 13605,
+   "min": 1.341,
+   "p5": 2.219,
    "med": 2.42,
-   "p95": 2.589,
+   "p95": 2.586,
    "max": 3.163,
    "sotto_1.7": 7,
-   "sopra_2.4": 7345,
+   "sopra_2.4": 7494,
    "piu_bassi": [
     [
-     1.342,
+     1.341,
      "9205",
      "ENI TREPALLE",
      "Livigno",
@@ -284,27 +284,27 @@
    ]
   },
   "D1": {
-   "n": 20078,
-   "min": 1.342,
-   "p5": 2.19,
-   "med": 2.25,
-   "p95": 2.389,
+   "n": 20079,
+   "min": 1.341,
+   "p5": 2.199,
+   "med": 2.254,
+   "p95": 2.379,
    "max": 2.899,
    "sotto_1.7": 71,
-   "sopra_2.4": 478,
+   "sopra_2.4": 421,
    "piu_bassi": [
     [
-     1.342,
-     "22628",
-     "GES.CAR. SAS",
+     1.341,
+     "9205",
+     "ENI TREPALLE",
      "Livigno",
      "SO",
      false
     ],
     [
      1.342,
-     "9205",
-     "ENI TREPALLE",
+     "22628",
+     "GES.CAR. SAS",
      "Livigno",
      "SO",
      false
@@ -378,13 +378,13 @@
    ]
   },
   "G0": {
-   "n": 4471,
+   "n": 4481,
    "min": 0.554,
-   "p5": 0.695,
+   "p5": 0.696,
    "med": 0.769,
    "p95": 0.899,
    "max": 1.399,
-   "sotto_1.7": 4471,
+   "sotto_1.7": 4481,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
@@ -472,13 +472,13 @@
    ]
   },
   "G1": {
-   "n": 153,
+   "n": 155,
    "min": 0.649,
-   "p5": 0.688,
+   "p5": 0.689,
    "med": 0.769,
-   "p95": 0.869,
+   "p95": 0.879,
    "max": 0.989,
-   "sotto_1.7": 153,
+   "sotto_1.7": 155,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
@@ -523,10 +523,10 @@
     ],
     [
      0.679,
-     "33636",
-     "CARBURANTI S.N.C. DI GIORGIO VARRIALE",
-     "Napoli",
-     "NA",
+     "62478",
+     "APRON UGENTO",
+     "Ugento",
+     "LE",
      false
     ]
    ],
@@ -566,14 +566,14 @@
    ]
   },
   "M0": {
-   "n": 1451,
+   "n": 1449,
    "min": 1.0,
    "p5": 1.619,
    "med": 1.899,
    "p95": 2.199,
    "max": 4.999,
-   "sotto_1.7": 192,
-   "sopra_2.4": 6,
+   "sotto_1.7": 182,
+   "sopra_2.4": 7,
    "piu_bassi": [
     [
      1.0,
@@ -660,13 +660,13 @@
    ]
   },
   "M1": {
-   "n": 100,
+   "n": 97,
    "min": 1.315,
-   "p5": 1.589,
+   "p5": 1.499,
    "med": 1.879,
-   "p95": 2.099,
-   "max": 2.199,
-   "sotto_1.7": 25,
+   "p95": 2.109,
+   "max": 2.2,
+   "sotto_1.7": 24,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
@@ -720,14 +720,6 @@
    ],
    "piu_alti": [
     [
-     2.109,
-     "56062",
-     "sanrocco carburanti srl",
-     "Altamura",
-     "BA",
-     false
-    ],
-    [
      2.199,
      "47939",
      "Castelfranco Veneto Azzalini Energie",
@@ -749,6 +741,14 @@
      "Azzalini Energie Belluno Metano",
      "Belluno",
      "BL",
+     false
+    ],
+    [
+     2.2,
+     "50943",
+     "ENI METANO MONTORIO",
+     "Verona",
+     "VR",
      false
     ]
    ]
