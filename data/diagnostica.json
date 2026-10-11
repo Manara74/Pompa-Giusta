@@ -1,15 +1,15 @@
 {
- "date": "2026-10-09",
+ "date": "2026-10-10",
  "keys": {
   "B0": {
-   "n": 13631,
+   "n": 13614,
    "min": 1.19,
-   "p5": 1.99,
+   "p5": 1.994,
    "med": 2.2,
-   "p95": 2.358,
+   "p95": 2.359,
    "max": 3.25,
    "sotto_1.7": 16,
-   "sopra_2.4": 296,
+   "sopra_2.4": 283,
    "piu_bassi": [
     [
      1.19,
@@ -96,14 +96,14 @@
    ]
   },
   "B1": {
-   "n": 20070,
+   "n": 19977,
    "min": 1.206,
    "p5": 1.989,
    "med": 1.999,
    "p95": 2.179,
    "max": 2.869,
-   "sotto_1.7": 77,
-   "sopra_2.4": 31,
+   "sotto_1.7": 38,
+   "sopra_2.4": 29,
    "piu_bassi": [
     [
      1.206,
@@ -122,39 +122,47 @@
      false
     ],
     [
-     1.558,
-     "60316",
-     "RIETI- SALARIA",
-     "Rieti",
-     "RI",
-     false
-    ],
-    [
-     1.564,
-     "60401",
-     "VITERBO - KM 62",
-     "Viterbo",
-     "VT",
-     false
-    ],
-    [
-     1.565,
-     "60399",
-     "VITERBO - TUSCANESE",
-     "Viterbo",
-     "VT",
-     false
-    ],
-    [
      1.569,
      "36845",
      "Via Degli Angeli",
      "Roma",
      "RM",
      false
+    ],
+    [
+     1.589,
+     "60094",
+     "Verona Via Unità d'Italia",
+     "Verona",
+     "VR",
+     false
+    ],
+    [
+     1.595,
+     "60090",
+     "LUZZARA",
+     "Luzzara",
+     "RE",
+     false
+    ],
+    [
+     1.598,
+     "51363",
+     "Global Srl",
+     "Livigno",
+     "SO",
+     false
     ]
    ],
    "piu_alti": [
+    [
+     2.699,
+     "40673",
+     "Costanzo Carburanti s.r.l.",
+     "Lampedusa E Linosa",
+     "AG",
+     false
+    ],
     [
      2.699,
      "61729",
@@ -172,14 +180,6 @@
      true
     ],
     [
-     2.763,
-     "61340",
-     "Gestore MBL srl",
-     "Capraia Isola",
-     "LI",
-     false
-    ],
-    [
      2.869,
      "12654",
      "Staz. Carburanti De Simone Domenico",
@@ -190,14 +190,14 @@
    ]
   },
   "D0": {
-   "n": 13608,
+   "n": 13592,
    "min": 1.308,
-   "p5": 2.225,
+   "p5": 2.219,
    "med": 2.4,
-   "p95": 2.58,
+   "p95": 2.561,
    "max": 3.163,
    "sotto_1.7": 7,
-   "sopra_2.4": 6790,
+   "sopra_2.4": 6350,
    "piu_bassi": [
     [
      1.308,
@@ -284,14 +284,14 @@
    ]
   },
   "D1": {
-   "n": 20080,
+   "n": 19985,
    "min": 1.308,
    "p5": 2.19,
-   "med": 2.254,
-   "p95": 2.37,
+   "med": 2.25,
+   "p95": 2.369,
    "max": 2.899,
-   "sotto_1.7": 71,
-   "sopra_2.4": 398,
+   "sotto_1.7": 31,
+   "sopra_2.4": 373,
    "piu_bassi": [
     [
      1.308,
@@ -310,35 +310,35 @@
      false
     ],
     [
-     1.544,
-     "60909",
-     "VICALVI",
-     "Vicalvi",
-     "FR",
-     false
-    ],
-    [
-     1.549,
-     "60751",
-     "PERGOLA",
-     "Pergola",
-     "PU",
-     false
-    ],
-    [
-     1.552,
-     "60954",
-     "PORTO VIRO",
-     "Porto Viro",
+     1.573,
+     "60619",
+     "BOSARO",
+     "Bosaro",
      "RO",
      false
     ],
     [
-     1.559,
-     "60896",
-     "GUALDO",
-     "Gualdo",
-     "MC",
+     1.574,
+     "50172",
+     "ATENA LUCANA",
+     "Atena Lucana",
+     "SA",
+     false
+    ],
+    [
+     1.578,
+     "55763",
+     "SMAF 1031 - PULVILLO",
+     "Roma",
+     "RM",
+     false
+    ],
+    [
+     1.579,
+     "32991",
+     "EWA POINT MEZZANO",
+     "Caserta",
+     "CE",
      false
     ]
    ],
@@ -378,45 +378,21 @@
    ]
   },
   "G0": {
-   "n": 4478,
+   "n": 4470,
    "min": 0.554,
-   "p5": 0.698,
+   "p5": 0.699,
    "med": 0.769,
    "p95": 0.899,
    "max": 1.399,
-   "sotto_1.7": 4478,
+   "sotto_1.7": 4470,
    "sopra_2.4": 0,
    "piu_bassi": [
-    [
-     0.554,
-     "60189",
-     "LAVELLO",
-     "Lavello",
-     "PZ",
-     false
-    ],
     [
      0.554,
      "60244",
      "VENOSA",
      "Venosa",
      "PZ",
-     false
-    ],
-    [
-     0.569,
-     "60316",
-     "RIETI- SALARIA",
-     "Rieti",
-     "RI",
-     false
-    ],
-    [
-     0.584,
-     "59965",
-     "BASILIANO",
-     "Basiliano",
-     "UD",
      false
     ],
     [
@@ -428,11 +404,35 @@
      false
     ],
     [
-     0.599,
-     "60402",
-     "VITERBO - UMBRO LAZIALE KM 61",
-     "Viterbo",
-     "VT",
+     0.609,
+     "51220",
+     "USAGAS SRL",
+     "San Giuseppe Vesuviano",
+     "NA",
+     false
+    ],
+    [
+     0.625,
+     "37097",
+     "CAMER CAPRARICA",
+     "Caprarica Di Lecce",
+     "LE",
+     false
+    ],
+    [
+     0.629,
+     "44651",
+     "I.P. Italiana Petroli",
+     "Calimera",
+     "LE",
+     false
+    ],
+    [
+     0.629,
+     "49456",
+     "Interpetrol_Termoli",
+     "Termoli",
+     "CB",
      false
     ]
    ],
@@ -472,23 +472,15 @@
    ]
   },
   "G1": {
-   "n": 155,
-   "min": 0.649,
+   "n": 153,
+   "min": 0.659,
    "p5": 0.689,
    "med": 0.769,
    "p95": 0.879,
    "max": 0.989,
-   "sotto_1.7": 155,
+   "sotto_1.7": 153,
    "sopra_2.4": 0,
    "piu_bassi": [
-    [
-     0.649,
-     "50094",
-     "COPPOLA PETROLI SRL",
-     "Castel Volturno",
-     "CE",
-     false
-    ],
     [
      0.659,
      "56697",
@@ -528,6 +520,14 @@
      "Ugento",
      "LE",
      false
+    ],
+    [
+     0.688,
+     "33899",
+     "totalerg",
+     "Marene",
+     "CN",
+     false
     ]
    ],
    "piu_alti": [
@@ -566,14 +566,14 @@
    ]
   },
   "M0": {
-   "n": 1450,
+   "n": 1444,
    "min": 1.0,
    "p5": 1.629,
    "med": 1.899,
    "p95": 2.199,
    "max": 4.999,
-   "sotto_1.7": 179,
-   "sopra_2.4": 7,
+   "sotto_1.7": 176,
+   "sopra_2.4": 8,
    "piu_bassi": [
     [
      1.0,
@@ -660,11 +660,11 @@
    ]
   },
   "M1": {
-   "n": 98,
+   "n": 100,
    "min": 1.315,
-   "p5": 1.499,
+   "p5": 1.589,
    "med": 1.879,
-   "p95": 2.109,
+   "p95": 2.099,
    "max": 2.2,
    "sotto_1.7": 23,
    "sopra_2.4": 0,
