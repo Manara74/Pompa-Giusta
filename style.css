@@ -165,3 +165,6 @@ select:focus,input:focus{outline:none;border-color:rgba(79,195,181,.6);box-shado
 /* distintivo della bandiera */
 .info b{display:flex;align-items:center;gap:8px}
 .bd{flex:none;width:26px;height:26px;border-radius:50%;display:inline-grid;place-items:center;font:700 .62rem/1 var(--font-ui);letter-spacing:.02em;border:1px solid rgba(255,255,255,.18)}
+
+.when{display:block;margin-top:4px;text-align:center;font-size:.72rem;color:var(--muted)}
+.when.old{color:var(--warn);font-weight:600}

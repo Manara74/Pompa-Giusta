@@ -66,7 +66,7 @@ async function getJSON(url, opt) {
 }
 function expand(r) {
   return { id: r.i, brand: r.b || 'Altro', name: r.n, addr: r.a || '', comune: r.c || '', prov: r.p, hw: !!r.h,
-    lat: r.la == null ? null : r.la, lon: r.lo == null ? null : r.lo, p: r.x, s: r.s || [] };
+    lat: r.la == null ? null : r.la, lon: r.lo == null ? null : r.lo, p: r.x, d: r.d || {}, s: r.s || [] };
 }
 async function loadProvinces() { PG.setProvinces(await getJSON('province.json')); }
 async function loadAll() {
@@ -193,13 +193,16 @@ function rowHTML(s, o) {
   const lab = odd ? (d < 0 ? 'Molto sotto la media: da verificare' : 'Molto sopra la media: da verificare')
     : cls === 'good' ? 'Sotto la media' : cls === 'bad' ? 'Sopra la media' : 'In linea con la media';
   const set = effSv(s), open = S.open === s.id;
+  const age = s.d && s.d[k] != null && S.date ? s.d[k] : null;
+  const when = age == null ? '' : PG.priceDate(S.date, age);
   const delta = d != null
     ? '<div class="delta ' + cls + '"><strong>' + PG.fmtC(d) + '</strong><span>' + lab + '</span><em>' +
       (d * S.litri < 0 ? '−' : d * S.litri > 0 ? '+' : '') + PG.fmtE(Math.abs(d * S.litri)) + ' sul pieno</em></div>' : '';
   return '<li class="row' + (open ? ' open' : '') + '" data-id="' + esc(s.id) + '">' +
     '<div class="main" tabindex="0" role="button" aria-expanded="' + open + '">' +
     '<div><span class="rank">N. ' + o.rank + ' di ' + o.total + (isFav(s.id) ? ' · ★' : '') + '</span>' +
-    '<div class="lcd"><span>' + PG.fmtP(p) + '</span><small>€/L</small></div></div>' +
+    '<div class="lcd"><span>' + PG.fmtP(p) + '</span><small>€/L</small></div>' +
+    (when ? '<span class="when' + (age >= 4 ? ' old' : '') + '">Prezzo del ' + when + '</span>' : '') + '</div>' +
     '<div class="info"><b>' + brandBadge(s.brand) + '<span>' + esc(s.name) + '</span></b>' +
     '<span class="l">' + esc(s.brand) + (s.comune ? ' · ' + esc(s.comune) : '') + (s.hw ? ' · autostrada' : '') + '</span>' +
     (s.addr ? '<span class="l">' + esc(s.addr) + '</span>' : '') +

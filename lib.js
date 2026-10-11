@@ -35,6 +35,10 @@ PG.fmtP = v => v.toFixed(3).replace('.', ',');
 PG.fmtE = v => v.toLocaleString('it-IT', { style: 'currency', currency: 'EUR' });
 PG.fmtC = d => (d > 0.00005 ? '+' : d < -0.00005 ? '−' : '') + Math.abs(d * 100).toFixed(1).replace('.', ',') + ' c/L';
 PG.fmtKm = k => (k < 10 ? k.toFixed(1) : Math.round(k).toString()).replace('.', ',') + ' km';
+PG.priceDate = (iso, ageDays) => { // data in cui il gestore ha comunicato il prezzo (gg/mm)
+  const t = new Date(iso + 'T12:00:00Z'); t.setUTCDate(t.getUTCDate() - ageDays);
+  return String(t.getUTCDate()).padStart(2, '0') + '/' + String(t.getUTCMonth() + 1).padStart(2, '0');
+};
 PG.fmtD = iso => { if (!iso) return ''; const [y, m, d] = iso.split('-'); return d + '/' + m + '/' + y; };
 
 /* ---------- medie ---------- */

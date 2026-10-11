@@ -267,7 +267,7 @@ def read_prezzi(text):
         rows.append((r[ci].strip(), '%s%d' % (k, selfv), pr, dt))
     if ref is None:
         ref = newest or datetime.now()
-    prices, stale = {}, 0
+    prices, ages, stale = {}, {}, 0
     for sid, key, pr, dt in rows:
         if dt and (ref - dt).total_seconds() / 86400 > MAX_AGE_DAYS:
             stale += 1
@@ -275,7 +275,12 @@ def read_prezzi(text):
         d = prices.setdefault(sid, {})
         if key not in d or pr < d[key]:
             d[key] = round(pr, 3)
-    return prices, ref.strftime('%Y-%m-%d'), stale
+            # giorni trascorsi dalla comunicazione del prezzo, rispetto alla data del file
+            if dt:
+                ages.setdefault(sid, {})[key] = max(0, (ref.date() - dt.date()).days)
+            else:
+                ages.get(sid, {}).pop(key, None)
+    return prices, ref.strftime('%Y-%m-%d'), stale, ages
 
 
 # ------------------------------------------------------------- servizi OSM
@@ -363,13 +368,15 @@ def main():
         p_text = fetch_first(p_urls, 'prezzi')
 
     anag, anomalies = read_anagrafica(a_text, prov)
-    prices, date, stale = read_prezzi(p_text)
+    prices, date, stale, ages = read_prezzi(p_text)
 
     stations = []
     for sid, rec in anag.items():
         if sid in prices:
             rec = dict(rec)
             rec['x'] = prices[sid]
+            if sid in ages:
+                rec['d'] = ages[sid]
             stations.append(rec)
     if len(stations) < args.min_stations:
         sys.exit('Troppo pochi impianti con prezzi (%d): non pubblico dati incompleti.' % len(stations))
@@ -377,7 +384,7 @@ def main():
     matched = attach_services(stations, load_services(os.path.join(args.out, 'services.json')))
     stations.sort(key=lambda s: (s['p'], s['c'], s['n']))
     for s in stations:  # tolgo i campi vuoti per tenere il file leggero
-        for k in [k for k, v in s.items() if v in (None, '', 0) and k not in ('x',)]:
+        for k in [k for k, v in s.items() if v in (None, '', 0) and k not in ('x', 'd')]:
             del s[k]
 
     payload = {'date': date, 'n': len(stations), 's': stations}
