@@ -1,15 +1,15 @@
 {
- "date": "2026-10-10",
+ "date": "2026-10-11",
  "keys": {
   "B0": {
-   "n": 13614,
+   "n": 13617,
    "min": 1.19,
    "p5": 1.994,
    "med": 2.2,
    "p95": 2.359,
    "max": 3.25,
-   "sotto_1.7": 16,
-   "sopra_2.4": 283,
+   "sotto_1.7": 15,
+   "sopra_2.4": 275,
    "piu_bassi": [
     [
      1.19,
@@ -96,23 +96,15 @@
    ]
   },
   "B1": {
-   "n": 19977,
+   "n": 20000,
    "min": 1.206,
    "p5": 1.989,
    "med": 1.999,
    "p95": 2.179,
    "max": 2.869,
-   "sotto_1.7": 38,
+   "sotto_1.7": 36,
    "sopra_2.4": 29,
    "piu_bassi": [
-    [
-     1.206,
-     "22628",
-     "GES.CAR. SAS",
-     "Livigno",
-     "SO",
-     false
-    ],
     [
      1.206,
      "9205",
@@ -152,6 +144,14 @@
      "Livigno",
      "SO",
      false
+    ],
+    [
+     1.599,
+     "62020",
+     "ALA TERRICCIOLA",
+     "Terricciola",
+     "PI",
+     false
     ]
    ],
    "piu_alti": [
@@ -190,17 +190,17 @@
    ]
   },
   "D0": {
-   "n": 13592,
-   "min": 1.308,
+   "n": 13596,
+   "min": 1.292,
    "p5": 2.219,
    "med": 2.4,
-   "p95": 2.561,
+   "p95": 2.56,
    "max": 3.163,
-   "sotto_1.7": 7,
-   "sopra_2.4": 6350,
+   "sotto_1.7": 8,
+   "sopra_2.4": 6252,
    "piu_bassi": [
     [
-     1.308,
+     1.292,
      "9205",
      "ENI TREPALLE",
      "Livigno",
@@ -212,6 +212,14 @@
      "54868",
      "STAR OIL",
      "Roma",
+     "RM",
+     false
+    ],
+    [
+     1.639,
+     "58876",
+     "MONTEPORZIO",
+     "Monte Porzio Catone",
      "RM",
      false
     ],
@@ -237,14 +245,6 @@
      "ANGELI SABRINA",
      "Cagli",
      "PU",
-     false
-    ],
-    [
-     1.689,
-     "37062",
-     "AdS Agip - Candela Casello A16",
-     "Candela",
-     "FG",
      false
     ]
    ],
@@ -284,27 +284,19 @@
    ]
   },
   "D1": {
-   "n": 19985,
-   "min": 1.308,
+   "n": 20007,
+   "min": 1.292,
    "p5": 2.19,
    "med": 2.25,
    "p95": 2.369,
    "max": 2.899,
-   "sotto_1.7": 31,
-   "sopra_2.4": 373,
+   "sotto_1.7": 30,
+   "sopra_2.4": 370,
    "piu_bassi": [
     [
-     1.308,
+     1.292,
      "9205",
      "ENI TREPALLE",
-     "Livigno",
-     "SO",
-     false
-    ],
-    [
-     1.342,
-     "22628",
-     "GES.CAR. SAS",
      "Livigno",
      "SO",
      false
@@ -339,6 +331,14 @@
      "EWA POINT MEZZANO",
      "Caserta",
      "CE",
+     false
+    ],
+    [
+     1.589,
+     "45516",
+     "EASY SERVICE S.R.L. / PIOSSASCO",
+     "Piossasco",
+     "TO",
      false
     ]
    ],
@@ -378,13 +378,13 @@
    ]
   },
   "G0": {
-   "n": 4470,
+   "n": 4477,
    "min": 0.554,
    "p5": 0.699,
    "med": 0.769,
    "p95": 0.899,
    "max": 1.399,
-   "sotto_1.7": 4470,
+   "sotto_1.7": 4477,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
@@ -401,6 +401,14 @@
      "POMPA BIANCA GIOIA DEI MARSI LOC. AQUILELLA",
      "Gioia Dei Marsi",
      "AQ",
+     false
+    ],
+    [
+     0.609,
+     "13558",
+     "BO.GA PETROLI",
+     "Giugliano In Campania",
+     "NA",
      false
     ],
     [
@@ -425,14 +433,6 @@
      "I.P. Italiana Petroli",
      "Calimera",
      "LE",
-     false
-    ],
-    [
-     0.629,
-     "49456",
-     "Interpetrol_Termoli",
-     "Termoli",
-     "CB",
      false
     ]
    ],
@@ -472,13 +472,13 @@
    ]
   },
   "G1": {
-   "n": 153,
+   "n": 155,
    "min": 0.659,
    "p5": 0.689,
    "med": 0.769,
    "p95": 0.879,
    "max": 0.989,
-   "sotto_1.7": 153,
+   "sotto_1.7": 155,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
@@ -566,13 +566,13 @@
    ]
   },
   "M0": {
-   "n": 1444,
+   "n": 1449,
    "min": 1.0,
    "p5": 1.629,
    "med": 1.899,
    "p95": 2.199,
    "max": 4.999,
-   "sotto_1.7": 176,
+   "sotto_1.7": 177,
    "sopra_2.4": 8,
    "piu_bassi": [
     [
@@ -660,7 +660,7 @@
    ]
   },
   "M1": {
-   "n": 100,
+   "n": 101,
    "min": 1.315,
    "p5": 1.589,
    "med": 1.879,
