@@ -1,24 +1,16 @@
 {
- "date": "2026-10-11",
+ "date": "2026-10-12",
  "keys": {
   "B0": {
-   "n": 13617,
-   "min": 1.19,
+   "n": 13609,
+   "min": 1.206,
    "p5": 1.994,
    "med": 2.2,
    "p95": 2.359,
    "max": 3.25,
    "sotto_1.7": 15,
-   "sopra_2.4": 275,
+   "sopra_2.4": 271,
    "piu_bassi": [
-    [
-     1.19,
-     "12109",
-     "BURATTINI MARCO",
-     "Roma",
-     "RM",
-     false
-    ],
     [
      1.206,
      "9205",
@@ -54,6 +46,14 @@
     [
      1.618,
      "21866",
+     "TOTAL ERG - LIVIGNO",
+     "Livigno",
+     "SO",
+     false
+    ],
+    [
+     1.618,
+     "21869",
      "TOTAL ERG - LIVIGNO",
      "Livigno",
      "SO",
@@ -96,15 +96,23 @@
    ]
   },
   "B1": {
-   "n": 20000,
+   "n": 19986,
    "min": 1.206,
    "p5": 1.989,
    "med": 1.999,
-   "p95": 2.179,
+   "p95": 2.177,
    "max": 2.869,
-   "sotto_1.7": 36,
+   "sotto_1.7": 33,
    "sopra_2.4": 29,
    "piu_bassi": [
+    [
+     1.206,
+     "22628",
+     "GES.CAR. SAS",
+     "Livigno",
+     "SO",
+     false
+    ],
     [
      1.206,
      "9205",
@@ -127,14 +135,6 @@
      "Verona Via Unità d'Italia",
      "Verona",
      "VR",
-     false
-    ],
-    [
-     1.595,
-     "60090",
-     "LUZZARA",
-     "Luzzara",
-     "RE",
      false
     ],
     [
@@ -190,14 +190,14 @@
    ]
   },
   "D0": {
-   "n": 13596,
+   "n": 13588,
    "min": 1.292,
    "p5": 2.219,
    "med": 2.4,
    "p95": 2.56,
    "max": 3.163,
    "sotto_1.7": 8,
-   "sopra_2.4": 6252,
+   "sopra_2.4": 6062,
    "piu_bassi": [
     [
      1.292,
@@ -284,14 +284,14 @@
    ]
   },
   "D1": {
-   "n": 20007,
+   "n": 19995,
    "min": 1.292,
    "p5": 2.19,
    "med": 2.25,
    "p95": 2.369,
    "max": 2.899,
-   "sotto_1.7": 30,
-   "sopra_2.4": 370,
+   "sotto_1.7": 29,
+   "sopra_2.4": 368,
    "piu_bassi": [
     [
      1.292,
@@ -378,37 +378,21 @@
    ]
   },
   "G0": {
-   "n": 4477,
-   "min": 0.554,
+   "n": 4474,
+   "min": 0.599,
    "p5": 0.699,
    "med": 0.769,
    "p95": 0.899,
    "max": 1.399,
-   "sotto_1.7": 4477,
+   "sotto_1.7": 4474,
    "sopra_2.4": 0,
    "piu_bassi": [
-    [
-     0.554,
-     "60244",
-     "VENOSA",
-     "Venosa",
-     "PZ",
-     false
-    ],
     [
      0.599,
      "58713",
      "POMPA BIANCA GIOIA DEI MARSI LOC. AQUILELLA",
      "Gioia Dei Marsi",
      "AQ",
-     false
-    ],
-    [
-     0.609,
-     "13558",
-     "BO.GA PETROLI",
-     "Giugliano In Campania",
-     "NA",
      false
     ],
     [
@@ -420,19 +404,35 @@
      false
     ],
     [
-     0.625,
-     "37097",
-     "CAMER CAPRARICA",
-     "Caprarica Di Lecce",
-     "LE",
-     false
-    ],
-    [
      0.629,
      "44651",
      "I.P. Italiana Petroli",
      "Calimera",
      "LE",
+     false
+    ],
+    [
+     0.629,
+     "49456",
+     "Interpetrol_Termoli",
+     "Termoli",
+     "CB",
+     false
+    ],
+    [
+     0.629,
+     "50280",
+     "MONTE SAN GIUSTO",
+     "Monte San Giusto",
+     "MC",
+     false
+    ],
+    [
+     0.634,
+     "58163",
+     "2597  SANNAZZARO DE' BURGONDI",
+     "Sannazzaro De' Burgondi",
+     "PV",
      false
     ]
    ],
@@ -566,7 +566,7 @@
    ]
   },
   "M0": {
-   "n": 1449,
+   "n": 1450,
    "min": 1.0,
    "p5": 1.629,
    "med": 1.899,
@@ -666,7 +666,7 @@
    "med": 1.879,
    "p95": 2.099,
    "max": 2.2,
-   "sotto_1.7": 23,
+   "sotto_1.7": 24,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
