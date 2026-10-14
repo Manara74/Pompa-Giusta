@@ -1,15 +1,15 @@
 {
- "date": "2026-10-12",
+ "date": "2026-10-13",
  "keys": {
   "B0": {
-   "n": 13609,
+   "n": 13589,
    "min": 1.206,
    "p5": 1.994,
    "med": 2.2,
-   "p95": 2.359,
+   "p95": 2.349,
    "max": 3.25,
-   "sotto_1.7": 15,
-   "sopra_2.4": 271,
+   "sotto_1.7": 14,
+   "sopra_2.4": 260,
    "piu_bassi": [
     [
      1.206,
@@ -96,14 +96,14 @@
    ]
   },
   "B1": {
-   "n": 19986,
+   "n": 19975,
    "min": 1.206,
    "p5": 1.989,
    "med": 1.999,
-   "p95": 2.177,
+   "p95": 2.169,
    "max": 2.869,
-   "sotto_1.7": 33,
-   "sopra_2.4": 29,
+   "sotto_1.7": 29,
+   "sopra_2.4": 27,
    "piu_bassi": [
     [
      1.206,
@@ -119,6 +119,14 @@
      "ENI TREPALLE",
      "Livigno",
      "SO",
+     false
+    ],
+    [
+     1.249,
+     "52385",
+     "q8",
+     "Gravina Di Catania",
+     "CT",
      false
     ],
     [
@@ -143,14 +151,6 @@
      "Global Srl",
      "Livigno",
      "SO",
-     false
-    ],
-    [
-     1.599,
-     "62020",
-     "ALA TERRICCIOLA",
-     "Terricciola",
-     "PI",
      false
     ]
    ],
@@ -190,14 +190,14 @@
    ]
   },
   "D0": {
-   "n": 13588,
+   "n": 13571,
    "min": 1.292,
    "p5": 2.219,
    "med": 2.4,
    "p95": 2.56,
    "max": 3.163,
-   "sotto_1.7": 8,
-   "sopra_2.4": 6062,
+   "sotto_1.7": 6,
+   "sopra_2.4": 5978,
    "piu_bassi": [
     [
      1.292,
@@ -205,14 +205,6 @@
      "ENI TREPALLE",
      "Livigno",
      "SO",
-     false
-    ],
-    [
-     1.599,
-     "54868",
-     "STAR OIL",
-     "Roma",
-     "RM",
      false
     ],
     [
@@ -232,19 +224,27 @@
      false
     ],
     [
-     1.659,
-     "59590",
-     "GPS GREGORIO VII",
-     "Roma",
-     "RM",
-     false
-    ],
-    [
      1.689,
      "10464",
      "ANGELI SABRINA",
      "Cagli",
      "PU",
+     false
+    ],
+    [
+     1.689,
+     "37062",
+     "AdS Agip - Candela Casello A16",
+     "Candela",
+     "FG",
+     false
+    ],
+    [
+     1.699,
+     "22181",
+     "moschettani",
+     "Cingoli",
+     "MC",
      false
     ]
    ],
@@ -284,29 +284,29 @@
    ]
   },
   "D1": {
-   "n": 19995,
+   "n": 19985,
    "min": 1.292,
    "p5": 2.19,
    "med": 2.25,
    "p95": 2.369,
    "max": 2.899,
-   "sotto_1.7": 29,
-   "sopra_2.4": 368,
+   "sotto_1.7": 25,
+   "sopra_2.4": 358,
    "piu_bassi": [
+    [
+     1.292,
+     "22628",
+     "GES.CAR. SAS",
+     "Livigno",
+     "SO",
+     false
+    ],
     [
      1.292,
      "9205",
      "ENI TREPALLE",
      "Livigno",
      "SO",
-     false
-    ],
-    [
-     1.573,
-     "60619",
-     "BOSARO",
-     "Bosaro",
-     "RO",
      false
     ],
     [
@@ -378,13 +378,13 @@
    ]
   },
   "G0": {
-   "n": 4474,
+   "n": 4475,
    "min": 0.599,
    "p5": 0.699,
    "med": 0.769,
    "p95": 0.899,
    "max": 1.399,
-   "sotto_1.7": 4474,
+   "sotto_1.7": 4475,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
@@ -438,19 +438,19 @@
    ],
    "piu_alti": [
     [
+     1.0,
+     "45516",
+     "EASY SERVICE S.R.L. / PIOSSASCO",
+     "Piossasco",
+     "TO",
+     false
+    ],
+    [
      1.049,
      "19409",
      "STAZIONE DI SERVIZIO MELISSA",
      "Jerzu",
      "NU",
-     false
-    ],
-    [
-     1.099,
-     "14928",
-     "SP Energia Siciliana",
-     "Borgetto",
-     "PA",
      false
     ],
     [
@@ -472,23 +472,15 @@
    ]
   },
   "G1": {
-   "n": 155,
-   "min": 0.659,
+   "n": 154,
+   "min": 0.669,
    "p5": 0.689,
    "med": 0.769,
    "p95": 0.879,
    "max": 0.989,
-   "sotto_1.7": 155,
+   "sotto_1.7": 154,
    "sopra_2.4": 0,
    "piu_bassi": [
-    [
-     0.659,
-     "56697",
-     "FUCCI FUEL 3",
-     "Barletta",
-     "BT",
-     false
-    ],
     [
      0.669,
      "59062",
@@ -528,6 +520,14 @@
      "Marene",
      "CN",
      false
+    ],
+    [
+     0.689,
+     "49434",
+     "PA136",
+     "Villabate",
+     "PA",
+     false
     ]
    ],
    "piu_alti": [
@@ -566,14 +566,14 @@
    ]
   },
   "M0": {
-   "n": 1450,
+   "n": 1446,
    "min": 1.0,
    "p5": 1.629,
-   "med": 1.899,
+   "med": 1.919,
    "p95": 2.199,
    "max": 4.999,
-   "sotto_1.7": 177,
-   "sopra_2.4": 8,
+   "sotto_1.7": 165,
+   "sopra_2.4": 9,
    "piu_bassi": [
     [
      1.0,
@@ -626,11 +626,11 @@
    ],
    "piu_alti": [
     [
-     2.577,
-     "60378",
-     "JONIA CARBURANTI",
-     "Riposto",
-     "CT",
+     2.599,
+     "14481",
+     "VALLICARBURANTI Conche",
+     "Codevigo",
+     "PD",
      false
     ],
     [
@@ -665,7 +665,7 @@
    "p5": 1.589,
    "med": 1.879,
    "p95": 2.099,
-   "max": 2.2,
+   "max": 2.28,
    "sotto_1.7": 24,
    "sopra_2.4": 0,
    "piu_bassi": [
@@ -711,10 +711,10 @@
     ],
     [
      1.589,
-     "46759",
-     "PERUGIA CENTOVA 2",
-     "Perugia",
-     "PG",
+     "63037",
+     "S.P.DELLE COLLINE PER LEGOLI KM 7+100",
+     "Pontedera",
+     "PI",
      false
     ]
    ],
@@ -744,7 +744,7 @@
      false
     ],
     [
-     2.2,
+     2.28,
      "50943",
      "ENI METANO MONTORIO",
      "Verona",
