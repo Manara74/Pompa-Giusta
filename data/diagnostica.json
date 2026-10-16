@@ -1,15 +1,15 @@
 {
- "date": "2026-10-14",
+ "date": "2026-10-15",
  "keys": {
   "B0": {
-   "n": 13520,
+   "n": 13497,
    "min": 1.206,
    "p5": 1.994,
    "med": 2.2,
    "p95": 2.349,
    "max": 3.25,
    "sotto_1.7": 14,
-   "sopra_2.4": 255,
+   "sopra_2.4": 253,
    "piu_bassi": [
     [
      1.206,
@@ -62,11 +62,11 @@
    ],
    "piu_alti": [
     [
-     2.824,
-     "21507",
-     "IP",
-     "Prato",
-     "PO",
+     2.839,
+     "60522",
+     "Esso PV 368318",
+     "Taranto",
+     "TA",
      false
     ],
     [
@@ -96,14 +96,14 @@
    ]
   },
   "B1": {
-   "n": 19888,
+   "n": 19866,
    "min": 1.206,
    "p5": 1.989,
    "med": 1.999,
    "p95": 2.169,
    "max": 2.869,
-   "sotto_1.7": 27,
-   "sopra_2.4": 29,
+   "sotto_1.7": 26,
+   "sopra_2.4": 27,
    "piu_bassi": [
     [
      1.206,
@@ -119,14 +119,6 @@
      "ENI TREPALLE",
      "Livigno",
      "SO",
-     false
-    ],
-    [
-     1.249,
-     "52385",
-     "q8",
-     "Gravina Di Catania",
-     "CT",
      false
     ],
     [
@@ -151,6 +143,14 @@
      "Global Srl",
      "Livigno",
      "SO",
+     false
+    ],
+    [
+     1.599,
+     "62020",
+     "ALA TERRICCIOLA",
+     "Terricciola",
+     "PI",
      false
     ]
    ],
@@ -190,14 +190,14 @@
    ]
   },
   "D0": {
-   "n": 13497,
+   "n": 13473,
    "min": 1.292,
    "p5": 2.219,
    "med": 2.4,
    "p95": 2.56,
-   "max": 3.163,
+   "max": 3.224,
    "sotto_1.7": 6,
-   "sopra_2.4": 5896,
+   "sopra_2.4": 5900,
    "piu_bassi": [
     [
      1.292,
@@ -250,7 +250,7 @@
    ],
    "piu_alti": [
     [
-     3.163,
+     3.224,
      "21783",
      "IP MONDOVI' VIA CUNEO 107",
      "Mondovì",
@@ -258,7 +258,7 @@
      false
     ],
     [
-     3.163,
+     3.224,
      "22620",
      "IP VERZUOLO",
      "Verzuolo",
@@ -266,7 +266,7 @@
      false
     ],
     [
-     3.163,
+     3.224,
      "24518",
      "IP VILLANOVA MONDOVI'",
      "Villanova Mondovì",
@@ -274,7 +274,7 @@
      false
     ],
     [
-     3.163,
+     3.224,
      "37545",
      "IP FOSSANO - SAN LORENZO",
      "Fossano",
@@ -284,14 +284,14 @@
    ]
   },
   "D1": {
-   "n": 19898,
+   "n": 19874,
    "min": 1.292,
    "p5": 2.19,
-   "med": 2.249,
-   "p95": 2.369,
+   "med": 2.25,
+   "p95": 2.379,
    "max": 2.899,
    "sotto_1.7": 23,
-   "sopra_2.4": 345,
+   "sopra_2.4": 385,
    "piu_bassi": [
     [
      1.292,
@@ -378,13 +378,13 @@
    ]
   },
   "G0": {
-   "n": 4452,
+   "n": 4449,
    "min": 0.599,
    "p5": 0.699,
    "med": 0.769,
    "p95": 0.899,
    "max": 1.399,
-   "sotto_1.7": 4452,
+   "sotto_1.7": 4449,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
@@ -472,13 +472,13 @@
    ]
   },
   "G1": {
-   "n": 153,
+   "n": 154,
    "min": 0.669,
    "p5": 0.689,
-   "med": 0.778,
+   "med": 0.779,
    "p95": 0.879,
    "max": 0.989,
-   "sotto_1.7": 153,
+   "sotto_1.7": 154,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
@@ -495,14 +495,6 @@
      "fp",
      "San Cipirello",
      "PA",
-     false
-    ],
-    [
-     0.678,
-     "63765",
-     "RIETI",
-     "Rieti",
-     "RI",
      false
     ],
     [
@@ -527,6 +519,14 @@
      "PA136",
      "Villabate",
      "PA",
+     false
+    ],
+    [
+     0.689,
+     "50277",
+     "Casamassima",
+     "Casamassima",
+     "BA",
      false
     ]
    ],
@@ -566,14 +566,14 @@
    ]
   },
   "M0": {
-   "n": 1446,
+   "n": 1442,
    "min": 1.0,
-   "p5": 1.648,
-   "med": 1.939,
+   "p5": 1.65,
+   "med": 1.949,
    "p95": 2.199,
    "max": 4.999,
-   "sotto_1.7": 155,
-   "sopra_2.4": 10,
+   "sotto_1.7": 134,
+   "sopra_2.4": 11,
    "piu_bassi": [
     [
      1.0,
@@ -626,15 +626,15 @@
    ],
    "piu_alti": [
     [
-     2.599,
-     "56155",
-     "ITALMARE - VILLARICCA",
-     "Villaricca",
-     "NA",
+     2.697,
+     "60378",
+     "JONIA CARBURANTI",
+     "Riposto",
+     "CT",
      false
     ],
     [
-     2.629,
+     2.699,
      "14481",
      "VALLICARBURANTI Conche",
      "Codevigo",
@@ -660,13 +660,13 @@
    ]
   },
   "M1": {
-   "n": 100,
+   "n": 98,
    "min": 1.315,
-   "p5": 1.599,
-   "med": 1.879,
+   "p5": 1.499,
+   "med": 1.899,
    "p95": 2.099,
    "max": 2.28,
-   "sotto_1.7": 23,
+   "sotto_1.7": 15,
    "sopra_2.4": 0,
    "piu_bassi": [
     [
@@ -720,19 +720,11 @@
    ],
    "piu_alti": [
     [
-     2.199,
-     "47939",
-     "Castelfranco Veneto Azzalini Energie",
-     "Castelfranco Veneto",
-     "TV",
-     false
-    ],
-    [
-     2.199,
-     "51933",
-     "OIL ITALIA LONGARONE",
-     "Longarone",
-     "BL",
+     2.099,
+     "62224",
+     "IP METANO GPL",
+     "Paolisi",
+     "BN",
      false
     ],
     [
@@ -741,6 +733,14 @@
      "Azzalini Energie Belluno Metano",
      "Belluno",
      "BL",
+     false
+    ],
+    [
+     2.199,
+     "56062",
+     "sanrocco carburanti srl",
+     "Altamura",
+     "BA",
      false
     ],
     [
