@@ -2,8 +2,7 @@ name: Aggiorna prezzi e pubblica
 
 on:
   schedule:
-    # ogni mattina, due tentativi (orari UTC): il secondo recupera un eventuale ritardo del Ministero
-    - cron: '20 6 * * *'
+    # una volta al giorno (orario UTC: circa le 12 in Italia)
     - cron: '20 10 * * *'
   workflow_dispatch:
   push:
