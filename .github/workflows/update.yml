@@ -2,12 +2,9 @@ name: Aggiorna prezzi e pubblica
 
 on:
   schedule:
-    # ogni giorno, piu' tentativi (orari UTC): i successivi recuperano ritardi o blocchi temporanei del Ministero
+    # ogni mattina, due tentativi (orari UTC): il secondo recupera un eventuale ritardo del Ministero
     - cron: '20 6 * * *'
     - cron: '20 10 * * *'
-    - cron: '20 14 * * *'
-    - cron: '20 18 * * *'
-    - cron: '20 22 * * *'
   workflow_dispatch:
   push:
     branches: [main]
