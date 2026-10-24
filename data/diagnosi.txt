@@ -1,0 +1,16 @@
+Avviso: pagina dati non letta (Download non riuscito: https://www.mimit.gov.it/it/open-data/elenco-dataset/carburanti-prezzi-praticati-e-anagrafica-degli-impianti (<urlopen error timed out>))
+Traceback (most recent call last):
+  File "/home/runner/work/Pompa-Giusta/Pompa-Giusta/scripts/build_data.py", line 434, in <module>
+    main()
+  File "/home/runner/work/Pompa-Giusta/Pompa-Giusta/scripts/build_data.py", line 367, in main
+    a_text = fetch_first(a_urls, 'anagrafica')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Pompa-Giusta/Pompa-Giusta/scripts/build_data.py", line 97, in fetch_first
+    raise RuntimeError('Impossibile scaricare %s.\n  ' % label + '\n  '.join(errors))
+RuntimeError: Impossibile scaricare anagrafica.
+  Download non riuscito: https://www.mimit.gov.it/images/exportCSV/anagrafica_impianti_attivo.csv (<urlopen error timed out>)
+  Download non riuscito: https://www.mimit.gov.it/images/exportCSV/anagrafica_impianti_attivi.csv (<urlopen error timed out>)
+--- curl prezzi
+curl: (28) Connection timed out after 60000 milliseconds
+--- curl anagrafica
+curl: (28) Connection timed out after 60002 milliseconds
