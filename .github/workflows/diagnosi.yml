@@ -1,0 +1,31 @@
+name: Diagnosi download (una tantum)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Esegui e registra l'errore
+        continue-on-error: true
+        run: |
+          mkdir -p data
+          python scripts/build_data.py --out /tmp/o > data/diagnosi.txt 2>&1 || true
+          echo "--- curl prezzi" >> data/diagnosi.txt
+          curl -sS -m 60 -o /tmp/p.csv -D - https://www.mimit.gov.it/images/exportCSV/prezzo_alle_8.csv 2>&1 | head -20 >> data/diagnosi.txt || true
+          head -c 400 /tmp/p.csv >> data/diagnosi.txt || true
+          echo "--- curl anagrafica" >> data/diagnosi.txt
+          curl -sS -m 60 -o /tmp/a.csv -D - https://www.mimit.gov.it/images/exportCSV/anagrafica_impianti_attivo.csv 2>&1 | head -20 >> data/diagnosi.txt || true
+          head -c 400 /tmp/a.csv >> data/diagnosi.txt || true
+      - name: Salva
+        run: |
+          git config user.name "pompa-giusta-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f data/diagnosi.txt
+          git commit -m "Esito diagnosi" || exit 0
+          for i in 1 2 3 4 5; do git pull --rebase origin main && git push && break; sleep 3; done
