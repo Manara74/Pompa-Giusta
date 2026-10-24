@@ -2,8 +2,10 @@ name: Aggiorna prezzi e pubblica
 
 on:
   schedule:
-    # una volta al giorno (orario UTC: circa le 12 in Italia)
-    - cron: '20 10 * * *'
+    # alle 12:00 ora italiana tutto l'anno: GitHub conosce solo l'ora UTC, quindi si pianificano
+    # le 10:00 (ora legale) e le 11:00 (ora solare) e il passaggio "ora" lascia andare solo quella giusta
+    - cron: '0 10 * * *'
+    - cron: '0 11 * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -18,7 +20,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  ora:
+    runs-on: ubuntu-latest
+    outputs:
+      vai: ${{ steps.c.outputs.vai }}
+    steps:
+      - id: c
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$(TZ=Europe/Rome date +%H)" = "12" ]; then echo "vai=si" >> "$GITHUB_OUTPUT"; else echo "vai=no" >> "$GITHUB_OUTPUT"; fi
+
   build:
+    needs: ora
+    if: needs.ora.outputs.vai == 'si'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
